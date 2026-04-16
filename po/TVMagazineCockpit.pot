@@ -1,0 +1,162 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: TVMagazineCockpit\n"
+"POT-Creation-Date: 2025-05-31 08:59+0200\n"
+"PO-Revision-Date: 2025-05-31 09:02+0200\n"
+"Last-Translator: xcentaurix\n"
+"Language-Team: \n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.6\n"
+"X-Poedit-Basepath: ../src\n"
+"X-Poedit-SearchPath-0: .\n"
+
+msgid "Unknown"
+msgstr ""
+
+msgid "COCKPIT"
+msgstr ""
+
+msgid "Data source"
+msgstr ""
+
+msgid "Select the data source for event information."
+msgstr ""
+
+msgid "Picon directory"
+msgstr ""
+
+msgid "Select the directory the picons are stored in."
+msgstr ""
+
+msgid "Temporary directory"
+msgstr ""
+
+msgid "Select the temporary directory the pictures are stored in."
+msgstr ""
+
+msgid "Cache"
+msgstr ""
+
+msgid "Activate cache for events and pictures."
+msgstr ""
+
+msgid "DEBUG"
+msgstr ""
+
+msgid "Log level"
+msgstr ""
+
+msgid "Select the debug log level."
+msgstr ""
+
+msgid "Back"
+msgstr ""
+
+msgid "Trailer"
+msgstr ""
+
+msgid "Event Details"
+msgstr ""
+
+msgid "min"
+msgstr ""
+
+msgid "Settings"
+msgstr ""
+
+msgid "About"
+msgstr ""
+
+msgid "Menu"
+msgstr ""
+
+msgid "Input"
+msgstr ""
+
+msgid "Zap"
+msgstr ""
+
+msgid "Add Timer"
+msgstr ""
+
+msgid "More"
+msgstr ""
+
+msgid "Overview"
+msgstr ""
+
+msgid "Bouquet"
+msgstr ""
+
+msgid "Loading..."
+msgstr ""
+
+msgid "Page"
+msgstr ""
+
+msgid "Services"
+msgstr ""
+
+msgid "20:15"
+msgstr ""
+
+msgid "22:00"
+msgstr ""
+
+msgid "Now"
+msgstr ""
+
+msgid "Browse TV Magazine"
+msgstr ""
+
+msgid "No event data available"
+msgstr ""
+
+msgid "Plugin"
+msgstr ""
+
+msgid "Version"
+msgstr ""
+
+msgid "Copyright"
+msgstr ""
+
+msgid "License"
+msgstr ""
+
+msgid "Cancel"
+msgstr ""
+
+msgid "Save"
+msgstr ""
+
+msgid "Defaults"
+msgstr ""
+
+msgid "Setup"
+msgstr ""
+
+msgid "Really close without saving settings?"
+msgstr ""
+
+msgid "Loading default settings will overwrite all settings, really load them?"
+msgstr ""
+
+msgid "Some changes require a GUI restart"
+msgstr ""
+
+msgid "Restart GUI now?"
+msgstr ""
+
+msgid "Bookmarks"
+msgstr ""
+
+msgid "Select directory"
+msgstr ""
+
+msgid "Path does not exist"
+msgstr ""
