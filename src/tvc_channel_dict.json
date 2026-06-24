@@ -1,0 +1,1445 @@
+{
+    "1:0:19:7E:C:85:C00000:0:0:0:": {
+        "tvs_id": "SCIFI",
+        "name": "Syfy",
+        "tvm_id": "154",
+        "tvh_id": "472"
+    },
+    "1:0:16:12:4:85:C00000:0:0:0:": {
+        "tvs_id": "SKY-S",
+        "name": "Sky select"
+    },
+    "1:0:1:1389:3EA:1:C00000:0:0:0:": {
+        "tvs_id": "BBC",
+        "name": "BBC World News",
+        "tvm_id": "61",
+        "tvh_id": "67"
+    },
+    "1:0:19:88:B:85:C00000:0:0:0:": {
+        "tvs_id": "TNT-C",
+        "name": "TNT Comedy",
+        "tvm_id": "421",
+        "tvh_id": "12035"
+    },
+    "1:0:19:2855:401:1:C00000:0:0:0:": {
+        "tvs_id": "BR",
+        "name": "BR Sued",
+        "tvfa_id": 13,
+        "tvm_id": "5",
+        "tvh_id": "51"
+    },
+    "1:0:19:EF77:3F9:1:C00000:0:0:0:": {
+        "tvs_id": "SIXX",
+        "name": "sixx",
+        "tvfa_id": 10,
+        "tvm_id": "318",
+        "tvh_id": "694"
+    },
+    "1:0:19:2859:401:1:C00000:0:0:0:": {
+        "tvs_id": "N3",
+        "name": "NDR",
+        "tvfa_id": 18,
+        "tvm_id": "6",
+        "tvh_id": "47"
+    },
+    "1:0:19:2B98:3F2:1:C00000:0:0:0:": {
+        "tvs_id": "KIKA",
+        "name": "KiKA",
+        "tvfa_id": 9,
+        "tvm_id": "76",
+        "tvh_id": "57"
+    },
+    "1:0:19:87:B:85:C00000:0:0:0:": {
+        "tvs_id": "CIN24",
+        "name": "Sky Cinema Premieren +24",
+        "tvm_id": "272",
+        "tvh_id": "612"
+    },
+    "1:0:1:33A5:3EB:1:C00000:0:0:0:": {
+        "tvh_id": "759",
+        "tvs_id": "ORFSP",
+        "name": "ORF SPORT +"
+    },
+    "1:0:1:32D4:45D:1:C00000:0:0:0:": {
+        "tvs_id": "ATV",
+        "name": "ATV",
+        "tvm_id": "129",
+        "tvh_id": "115"
+    },
+    "1:0:1:6FEF:436:1:C00000:0:0:0:": {
+        "tvs_id": "MTV-D",
+        "name": "MTV Dance"
+    },
+    "1:0:1:32C9:45D:1:C00000:0:0:0:": {
+        "tvs_id": "ORF1",
+        "name": "ORF 1",
+        "tvfa_id": 31,
+        "tvm_id": "16",
+        "tvh_id": "54"
+    },
+    "1:0:1:7094:443:1:C00000:0:0:0:": {
+        "tvs_id": "VOXUP",
+        "name": "VOXup",
+        "tvm_id": "555",
+        "tvh_id": "12125"
+    },
+    "1:0:19:EF10:421:1:C00000:0:0:0:": {
+        "tvs_id": "RTL",
+        "name": "RTL",
+        "tvfa_id": 22,
+        "tvm_id": "3",
+        "tvh_id": "38"
+    },
+    "1:0:1:332F:45B:1:C00000:0:0:0:": {
+        "tvs_id": "WDWTV",
+        "name": "Welt der Wunder TV",
+        "tvm_id": "173",
+        "tvh_id": "135946"
+    },
+    "1:0:1:2F08:441:1:C00000:0:0:0:": {
+        "tvs_id": "SUPER",
+        "name": "SUPER RTL",
+        "tvfa_id": 38,
+        "tvm_id": "13",
+        "tvh_id": "43"
+    },
+    "1:0:16:A:4:85:C00000:0:0:0:": {
+        "tvs_id": "CIN",
+        "name": "Sky Cinema Premieren",
+        "tvm_id": "270",
+        "tvh_id": "610"
+    },
+    "1:0:16:A8:B:85:C00000:0:0:0:": {
+        "tvs_id": "MOVTV",
+        "name": "Motorvision TV",
+        "tvm_id": "287",
+        "tvh_id": "627"
+    },
+    "1:0:1:4460:453:1:C00000:0:0:0:": {
+        "tvs_id": "SAT1G",
+        "name": "SAT.1 Gold",
+        "tvm_id": "430",
+        "tvh_id": "774"
+    },
+    "1:0:19:283E:3FB:1:C00000:0:0:0:": {
+        "tvs_id": "ARTE",
+        "name": "ARTE",
+        "tvfa_id": 37,
+        "tvm_id": "38",
+        "tvh_id": "58"
+    },
+    "1:0:19:1581:41F:1:C00000:0:0:0:": {
+        "tvs_id": "SPORT",
+        "name": "SPORT1",
+        "tvfa_id": 20,
+        "tvm_id": "45",
+        "tvh_id": "64"
+    },
+    "1:0:19:283F:3FB:1:C00000:0:0:0:": {
+        "tvs_id": "SWR",
+        "name": "SWR/SR",
+        "tvfa_id": 33,
+        "tvm_id": "8",
+        "tvh_id": "50"
+    },
+    "1:0:19:93:2:85:C00000:0:0:0:": {
+        "tvh_id": "12046",
+        "tvs_id": "SKY1",
+        "name": "Sky One"
+    },
+    "1:0:19:33AC:3EB:1:C00000:0:0:0:": {
+        "tvs_id": "ATV",
+        "name": "ATV",
+        "tvm_id": "129",
+        "tvh_id": "115"
+    },
+    "1:0:19:6F:D:85:C00000:0:0:0:": {
+        "tvh_id": "12121",
+        "tvs_id": "SKYCS",
+        "name": "Sky Cinema Special HD"
+    },
+    "1:0:19:2840:3FB:1:C00000:0:0:0:": {
+        "tvs_id": "SWR",
+        "name": "SWR/SR",
+        "tvfa_id": 33,
+        "tvm_id": "8",
+        "tvh_id": "666"
+    },
+    "1:0:1:2EF4:441:1:C00000:0:0:0:": {
+        "tvs_id": "RTL2",
+        "name": "RTL II",
+        "tvfa_id": 39,
+        "tvm_id": "43",
+        "tvh_id": "41"
+    },
+    "1:0:19:2263:438:1:C00000:0:0:0:": {
+        "tvs_id": "CPLUSC",
+        "name": "Canal+ Cin\u00e9ma"
+    },
+    "1:0:19:6D:B:85:C00000:0:0:0:": {
+        "tvs_id": "EURO2",
+        "name": "Eurosport 2",
+        "tvm_id": "239",
+        "tvh_id": "504"
+    },
+    "1:0:16:191:9:85:C00000:0:0:0:": {
+        "tvs_id": "JUKE",
+        "name": "Jukebox",
+        "tvm_id": "224",
+        "tvh_id": "558"
+    },
+    "1:0:16:204:6:85:C00000:0:0:0:": {
+        "tvs_id": "SKY-N",
+        "name": "Sky Cinema Classics",
+        "tvm_id": "277",
+        "tvh_id": "614"
+    },
+    "1:0:1:26:F:85:C00000:0:0:0:": {
+        "tvh_id": "12105",
+        "tvs_id": "HGTV",
+        "name": "Home & Garden TV "
+    },
+    "1:0:19:24C6:43C:1:C00000:0:0:0:": {
+        "tvs_id": "TRACE",
+        "tvm_id": "206",
+        "name": "Trace TV"
+    },
+    "1:0:1:7031:41B:1:C00000:0:0:0:": {
+        "tvs_id": "TAG24",
+        "name": "tagesschau24",
+        "tvfa_id": 34,
+        "tvm_id": "128",
+        "tvh_id": "100"
+    },
+    "1:0:1:445E:453:1:C00000:0:0:0:": {
+        "tvs_id": "K1",
+        "name": "kabel eins",
+        "tvfa_id": 35,
+        "tvm_id": "39",
+        "tvh_id": "44"
+    },
+    "1:0:19:245A:440:1:C00000:0:0:0:": {
+        "tvs_id": "FRA2",
+        "name": "France 2"
+    },
+    "1:0:16:194:B:85:C00000:0:0:0:": {
+        "tvs_id": "C-NET",
+        "name": "Cartoon Network",
+        "tvm_id": "219",
+        "tvh_id": "531"
+    },
+    "1:0:19:14B7:407:1:C00000:0:0:0:": {
+        "tvs_id": "PULS4",
+        "name": "PULS 4",
+        "tvm_id": "314",
+        "tvh_id": "402"
+    },
+    "1:0:1:2F5A:454:1:C00000:0:0:0:": {
+        "tvs_id": "BIBEL",
+        "name": "Bibel TV",
+        "tvm_id": "156",
+        "tvh_id": "280"
+    },
+    "1:0:1:6E41:431:1:C00000:0:0:0:": {
+        "tvs_id": "N3",
+        "name": "NDR",
+        "tvfa_id": 18,
+        "tvm_id": "6",
+        "tvh_id": "47"
+    },
+    "1:0:19:157E:41F:1:C00000:0:0:0:": {
+        "tvs_id": "123TV",
+        "name": "123.tv"
+    },
+    "1:0:1:D42:454:1:C00000:0:0:0:": {
+        "tvs_id": "QVCP",
+        "name": "QVC2"
+    },
+    "1:0:19:E:2:85:C00000:0:0:0:": {
+        "tvs_id": "SKY-CO",
+        "name": "Sky Comedy",
+        "tvm_id": "276",
+        "tvh_id": "595"
+    },
+    "1:0:19:6B:C:85:C00000:0:0:0:": {
+        "tvh_id": "618",
+        "tvs_id": "SKY-H",
+        "name": "Sky Cinema Best Of"
+    },
+    "1:0:19:EF79:3F9:1:C00000:0:0:0:": {
+        "tvs_id": "K1DOKU",
+        "name": "kabel eins Doku",
+        "tvm_id": "167",
+        "tvh_id": "12043"
+    },
+    "1:0:19:16A9:3FF:1:C00000:0:0:0:": {
+        "tvh_id": "262",
+        "tvs_id": "TVM",
+        "name": "m\u00fcnchen.tv"
+    },
+    "1:0:19:EF14:421:1:C00000:0:0:0:": {
+        "tvs_id": "NTV",
+        "name": "n-tv",
+        "tvfa_id": 14,
+        "tvm_id": "47",
+        "tvh_id": "66"
+    },
+    "1:0:19:6E:D:85:C00000:0:0:0:": {
+        "tvs_id": "SKYAT",
+        "name": "Sky Atlantic HD",
+        "tvm_id": "429",
+        "tvh_id": "767"
+    },
+    "1:0:16:DE:2:85:C00000:0:0:0:": {
+        "tvs_id": "SHD2",
+        "name": "Sky Sport HD 2",
+        "tvm_id": "315",
+        "tvh_id": "697"
+    },
+    "1:0:19:2887:40F:1:C00000:0:0:0:": {
+        "tvs_id": "TAG24",
+        "name": "tagesschau24",
+        "tvfa_id": 34,
+        "tvm_id": "128",
+        "tvh_id": "100"
+    },
+    "1:0:19:33FD:3ED:1:C00000:0:0:0:": {
+        "tvh_id": "759",
+        "tvs_id": "ORFSP",
+        "name": "ORF SPORT +"
+    },
+    "1:0:19:526F:41D:1:C00000:0:0:0:": {
+        "tvs_id": "QVC",
+        "name": "QVC",
+        "tvm_id": "54",
+        "tvh_id": "208"
+    },
+    "1:0:1:33:21:85:C00000:0:0:0:": {
+        "tvs_id": "TELE5",
+        "name": "Tele 5",
+        "tvfa_id": 8,
+        "tvm_id": "55",
+        "tvh_id": "277"
+    },
+    "1:0:19:286F:425:1:C00000:0:0:0:": {
+        "tvs_id": "RBB",
+        "name": "RBB",
+        "tvfa_id": 19,
+        "tvm_id": "57",
+        "tvh_id": "52"
+    },
+    "1:0:19:7B:9:85:C00000:0:0:0:": {
+        "tvs_id": "TNT-S",
+        "name": "TNT Serie",
+        "tvm_id": "267",
+        "tvh_id": "590"
+    },
+    "1:0:19:3402:3ED:1:C00000:0:0:0:": {
+        "tvs_id": "OE24TV",
+        "name": "oe24.TV"
+    },
+    "1:0:19:8F:9:85:C00000:0:0:0:": {
+        "tvs_id": "SPO-A",
+        "tvm_id": "286",
+        "name": "Sky Sport Austria"
+    },
+    "1:0:16:201:B:85:C00000:0:0:0:": {
+        "tvs_id": "BLUM",
+        "name": "Blue Movie"
+    },
+    "1:0:1F:228:10:85:C00000:0:0:0:": {
+        "tvs_id": "BULI",
+        "name": "Sky Sport Bundesliga",
+        "tvm_id": "288",
+        "tvh_id": "623"
+    },
+    "1:0:16:31:D:85:C00000:0:0:0:": {
+        "tvs_id": "SPTVW",
+        "name": "Spiegel TV Wissen",
+        "tvm_id": "406",
+        "tvh_id": "756"
+    },
+    "1:0:19:80:B:85:C00000:0:0:0:": {
+        "tvh_id": "758",
+        "tvs_id": "E!",
+        "name": "E! Entertainment"
+    },
+    "1:0:19:8B:2:85:C00000:0:0:0:": {
+        "tvs_id": "SKY-F",
+        "name": "Sky Family",
+        "tvm_id": "169",
+        "tvh_id": "12042"
+    },
+    "1:0:19:1195:406:1:C00000:0:0:0:": {
+        "tvs_id": "S1PLU",
+        "name": "SPORT1+",
+        "tvm_id": "420",
+        "tvh_id": "698"
+    },
+    "1:0:16:1E:2:85:C00000:0:0:0:": {
+        "tvs_id": "SPO-A",
+        "tvm_id": "286",
+        "name": "Sky Sport Austria"
+    },
+    "1:0:1:6D67:437:1:C00000:0:0:0:": {
+        "tvs_id": "3SAT",
+        "name": "3sat",
+        "tvfa_id": 26,
+        "tvm_id": "12",
+        "tvh_id": "56"
+    },
+    "1:0:19:13A7:3EA:1:C00000:0:0:0:": {
+        "tvs_id": "ALJAZ",
+        "name": "Al Jazeera"
+    },
+    "1:0:1:3336:45B:1:C00000:0:0:0:": {
+        "tvs_id": "SERVU",
+        "name": "ServusTV",
+        "tvm_id": "316",
+        "tvh_id": "660"
+    },
+    "1:0:19:2B7A:3F3:1:C00000:0:0:0:": {
+        "tvs_id": "2NEO",
+        "name": "ZDFneo",
+        "tvfa_id": 32,
+        "tvm_id": "294",
+        "tvh_id": "659"
+    },
+    "1:0:19:EF74:3F9:1:C00000:0:0:0:": {
+        "tvs_id": "SAT1",
+        "name": "SAT.1",
+        "tvfa_id": 7,
+        "tvm_id": "4",
+        "tvh_id": "39"
+    },
+    "1:0:16:16:2:85:C00000:0:0:0:": {
+        "tvs_id": "HEIMA",
+        "name": "Heimatkanal",
+        "tvm_id": "89",
+        "tvh_id": "154"
+    },
+    "1:0:1:6D6E:437:1:C00000:0:0:0:": {
+        "tvs_id": "2NEO",
+        "name": "ZDFneo",
+        "tvfa_id": 32,
+        "tvm_id": "294",
+        "tvh_id": "659"
+    },
+    "1:0:1:6DCC:44D:1:C00000:0:0:0:": {
+        "tvs_id": "HR",
+        "name": "HR",
+        "tvfa_id": 16,
+        "tvm_id": "7",
+        "tvh_id": "49"
+    },
+    "1:0:1F:1086:3EE:1:C00000:0:0:0:": {
+        "tvs_id": "QVC",
+        "name": "QVC",
+        "tvm_id": "54",
+        "tvh_id": "208"
+    },
+    "1:0:19:D:6:85:C00000:0:0:0:": {
+        "tvh_id": "603",
+        "tvs_id": "SKY-CR",
+        "name": "Sky Crime"
+    },
+    "1:0:1:4E27:43A:1:C00000:0:0:0:": {
+        "tvs_id": "PULS4",
+        "name": "PULS 4",
+        "tvm_id": "314",
+        "tvh_id": "402"
+    },
+    "1:0:19:285B:401:1:C00000:0:0:0:": {
+        "tvs_id": "PHOEN",
+        "name": "PHOENIX",
+        "tvfa_id": 23,
+        "tvm_id": "60",
+        "tvh_id": "194"
+    },
+    "1:0:19:2264:438:1:C00000:0:0:0:": {
+        "tvs_id": "CPLUSS",
+        "name": "Canal+ Sport"
+    },
+    "1:0:19:26B6:43E:1:C00000:0:0:0:": {
+        "tvs_id": "TV5",
+        "name": "TV5 Monde",
+        "tvm_id": "33",
+        "tvh_id": "260"
+    },
+    "1:0:1:384:21:85:C00000:0:0:0:": {
+        "tvs_id": "SPORT",
+        "name": "SPORT1",
+        "tvfa_id": 20,
+        "tvm_id": "45",
+        "tvh_id": "64"
+    },
+    "1:0:19:89:10:85:C00000:0:0:0:": {
+        "tvs_id": "SP-GE",
+        "name": "Spiegel Geschichte",
+        "tvm_id": "285",
+        "tvh_id": "625"
+    },
+    "1:0:19:286E:425:1:C00000:0:0:0:": {
+        "tvs_id": "RBB",
+        "name": "RBB",
+        "tvfa_id": 19,
+        "tvm_id": "57",
+        "tvh_id": "52"
+    },
+    "1:0:1:6F47:445:1:C00000:0:0:0:": {
+        "tvs_id": "ALPHA",
+        "name": "ARD alpha",
+        "tvfa_id": 5,
+        "tvm_id": "56",
+        "tvh_id": "104"
+    },
+    "1:0:19:245D:440:1:C00000:0:0:0:": {
+        "tvs_id": "FRA3",
+        "name": "France 3"
+    },
+    "1:0:19:2858:401:1:C00000:0:0:0:": {
+        "tvs_id": "N3",
+        "name": "NDR",
+        "tvfa_id": 18,
+        "tvm_id": "6",
+        "tvh_id": "47"
+    },
+    "1:0:1:6E47:431:1:C00000:0:0:0:": {
+        "tvs_id": "SWR",
+        "name": "SWR/SR",
+        "tvfa_id": 33,
+        "tvm_id": "8",
+        "tvh_id": "666"
+    },
+    "1:0:1:445D:453:1:C00000:0:0:0:": {
+        "tvs_id": "PRO7",
+        "name": "ProSieben",
+        "tvfa_id": 11,
+        "tvm_id": "11",
+        "tvh_id": "40"
+    },
+    "1:0:1:32DB:45D:1:C00000:0:0:0:": {
+        "tvs_id": "RIC",
+        "name": "RiC",
+        "tvm_id": "437",
+        "tvh_id": "771"
+    },
+    "1:0:1:33A7:3EB:1:C00000:0:0:0:": {
+        "tvs_id": "ATV2",
+        "name": "ATV II",
+        "tvm_id": "459",
+        "tvh_id": "761"
+    },
+    "1:0:19:4332:300C:13E:820000:0:0:0:": {
+        "tvs_id": "SF2",
+        "name": "SRF zwei",
+        "tvm_id": "35",
+        "tvh_id": "60"
+    },
+    "1:0:1:114E:404:1:C00000:0:0:0:": {
+        "tvh_id": "300",
+        "tvs_id": "DWTV",
+        "name": "DW (Europe)"
+    },
+    "1:0:1:3070:3F5:1:C00000:0:0:0:": {
+        "tvs_id": "RTL2",
+        "name": "RTL II",
+        "tvfa_id": 39,
+        "tvm_id": "43",
+        "tvh_id": "41"
+    },
+    "1:0:1:2F3A:441:1:C00000:0:0:0:": {
+        "tvs_id": "NTV",
+        "name": "n-tv",
+        "tvfa_id": 14,
+        "tvm_id": "47",
+        "tvh_id": "66"
+    },
+    "1:0:19:2871:425:1:C00000:0:0:0:": {
+        "tvs_id": "MDR",
+        "name": "MDR",
+        "tvfa_id": 12,
+        "tvm_id": "41",
+        "tvh_id": "48"
+    },
+    "1:0:1:6E2D:431:1:C00000:0:0:0:;": {
+        "tvs_id": "RBB",
+        "name": "RBB",
+        "tvfa_id": 19,
+        "tvm_id": "57",
+        "tvh_id": "52"
+    },
+    "1:0:1:41:7:85:C00000:0:0:0:": {
+        "tvs_id": "DMC",
+        "name": "DELUXE MUSIC",
+        "tvm_id": "238",
+        "tvh_id": "511"
+    },
+    "1:0:19:2B8E:3F2:1:C00000:0:0:0:": {
+        "tvs_id": "3SAT",
+        "name": "3sat",
+        "tvfa_id": 26,
+        "tvm_id": "12",
+        "tvh_id": "56"
+    },
+    "1:0:19:EF15:421:1:C00000:0:0:0:": {
+        "tvs_id": "RTL2",
+        "name": "RTL II",
+        "tvfa_id": 39,
+        "tvm_id": "43",
+        "tvh_id": "41"
+    },
+    "1:0:1:1AF9:3FE:1:C00000:0:0:0:": {
+        "tvs_id": "FR24F",
+        "name": "France 24 (franz.)"
+    },
+    "1:0:1:2F1D:441:1:C00000:0:0:0:": {
+        "tvs_id": "RTL-N",
+        "name": "NITRO",
+        "tvfa_id": 3,
+        "tvm_id": "427",
+        "tvh_id": "763"
+    },
+    "1:0:19:82:6:85:C00000:0:0:0:": {
+        "tvs_id": "HDDIS",
+        "name": "Discovery HD",
+        "tvm_id": "467",
+        "tvh_id": "138"
+    },
+    "1:0:16:DD:4:85:C00000:0:0:0:": {
+        "tvs_id": "HDSPO",
+        "name": "Sky Sport HD 1",
+        "tvm_id": "281",
+        "tvh_id": "621"
+    },
+    "1:0:1:701:5:85:C00000:0:0:0:": {
+        "tvs_id": "DISNE",
+        "name": "Disney Channel",
+        "tvfa_id": 27,
+        "tvm_id": "111",
+        "tvh_id": "139"
+    },
+    "1:0:19:2872:425:1:C00000:0:0:0:": {
+        "tvs_id": "MDR",
+        "name": "MDR",
+        "tvfa_id": 12,
+        "tvm_id": "41",
+        "tvh_id": "48"
+    },
+    "1:0:19:1519:455:1:C00000:0:0:0:": {
+        "tvs_id": "TELE5",
+        "name": "Tele 5",
+        "tvfa_id": 8,
+        "tvm_id": "55",
+        "tvh_id": "277"
+    },
+    "1:0:19:6EAC:3FD:1:C00000:0:0:0:": {
+        "tvs_id": "WDR",
+        "name": "WDR",
+        "tvfa_id": 43,
+        "tvm_id": "9",
+        "tvh_id": "46"
+    },
+    "1:0:19:33FC:3ED:1:C00000:0:0:0:": {
+        "tvs_id": "ORF3",
+        "name": "ORF III",
+        "tvm_id": "447",
+        "tvh_id": "757"
+    },
+    "1:0:19:EF11:421:1:C00000:0:0:0:": {
+        "tvs_id": "VOX",
+        "name": "VOX",
+        "tvfa_id": 30,
+        "tvm_id": "46",
+        "tvh_id": "42"
+    },
+    "1:0:19:17:4:85:C00000:0:0:0:": {
+        "tvs_id": "SKY-K",
+        "name": "Sky Krimi",
+        "tvm_id": "278",
+        "tvh_id": "615"
+    },
+    "1:0:1:3146:459:1:C00000:0:0:0:": {
+        "tvh_id": "403",
+        "tvs_id": "RMTV",
+        "name": "rheinmaintv"
+    },
+    "1:0:1:313C:459:1:C00000:0:0:0:": {
+        "tvh_id": "570",
+        "tvs_id": "DMF",
+        "name": "Deutsches Musik Fernsehen"
+    },
+    "1:0:16:DF:4:85:C00000:0:0:0:": {
+        "tvs_id": "BULI",
+        "name": "Sky Sport Bundesliga",
+        "tvm_id": "288",
+        "tvh_id": "623"
+    },
+    "1:0:1:6D6B:437:1:C00000:0:0:0:": {
+        "tvs_id": "ZINFO",
+        "name": "ZDFinfo",
+        "tvfa_id": 36,
+        "tvm_id": "137",
+        "tvh_id": "276"
+    },
+    "1:0:19:1580:41F:1:C00000:0:0:0:": {
+        "tvs_id": "QVCP",
+        "name": "QVC2"
+    },
+    "1:0:1:3138:459:1:C00000:0:0:0:": {
+        "tvh_id": "12122",
+        "tvs_id": "HEALTH",
+        "name": "Health TV"
+    },
+    "1:0:19:526C:41D:1:C00000:0:0:0:": {
+        "tvs_id": "ANIXE",
+        "name": "ANIXE",
+        "tvfa_id": 40,
+        "tvm_id": "269",
+        "tvh_id": "537"
+    },
+    "1:0:1:6DCE:44D:1:C00000:0:0:0:": {
+        "tvs_id": "BR",
+        "name": "BR Nord",
+        "tvfa_id": 13,
+        "tvm_id": "5",
+        "tvh_id": "51"
+    },
+    "1:0:19:151A:455:1:C00000:0:0:0:": {
+        "tvs_id": "DMAX",
+        "name": "DMAX",
+        "tvfa_id": 2,
+        "tvm_id": "52",
+        "tvh_id": "507"
+    },
+    "1:0:19:8C:4:85:C00000:0:0:0:": {
+        "tvs_id": "TNT-F",
+        "name": "TNT Film",
+        "tvm_id": "220",
+        "tvh_id": "633"
+    },
+    "1:0:19:5270:41D:1:C00000:0:0:0:": {
+        "tvs_id": "HSE",
+        "name": "HSE24",
+        "tvm_id": "53",
+        "tvh_id": "159"
+    },
+    "1:0:1:6E44:431:1:C00000:0:0:0:": {
+        "tvs_id": "MDR",
+        "name": "MDR",
+        "tvfa_id": 12,
+        "tvm_id": "41",
+        "tvh_id": "48"
+    },
+    "1:0:19:2873:425:1:C00000:0:0:0:": {
+        "tvs_id": "HR",
+        "name": "HR",
+        "tvfa_id": 16,
+        "tvm_id": "7",
+        "tvh_id": "49"
+    },
+    "1:0:19:EF76:3F9:1:C00000:0:0:0:": {
+        "tvs_id": "K1",
+        "name": "kabel eins",
+        "tvfa_id": 35,
+        "tvm_id": "39",
+        "tvh_id": "44"
+    },
+    "1:0:1:304:5:85:C00000:0:0:0:": {
+        "tvs_id": "TLC",
+        "name": "TLC",
+        "tvm_id": "445",
+        "tvh_id": "135954"
+    },
+    "1:0:16:1013:451:35:C00000:0:0:0:": {
+        "tvs_id": "PLANE",
+        "name": "Planet"
+    },
+    "1:0:19:5274:41D:1:C00000:0:0:0:": {
+        "tvs_id": "WELT",
+        "name": "WELT",
+        "tvfa_id": 28,
+        "tvm_id": "31",
+        "tvh_id": "175"
+    },
+    "1:0:1:6D68:437:1:C00000:0:0:0:": {
+        "tvs_id": "KIKA",
+        "name": "KiKA",
+        "tvfa_id": 9,
+        "tvm_id": "76",
+        "tvh_id": "57"
+    },
+    "1:0:16:206:2:85:C00000:0:0:0:": {
+        "tvs_id": "ROM",
+        "name": "Romance TV",
+        "tvm_id": "265",
+        "tvh_id": "552"
+    },
+    "1:0:1:79FE:443:1:C00000:0:0:0:": {
+        "tvs_id": "EURON",
+        "name": "euronews (ger)",
+        "tvm_id": "48",
+        "tvh_id": "68"
+    },
+    "1:0:16:9:3:85:C00000:0:0:0:": {
+        "tvs_id": "SKY-A",
+        "name": "Sky Action",
+        "tvm_id": "274",
+        "tvh_id": "613"
+    },
+    "1:0:19:71:B:85:C00000:0:0:0:": {
+        "tvs_id": "HISHD",
+        "name": "History HD",
+        "tvm_id": "181",
+        "tvh_id": "452"
+    },
+    "1:0:16:1B:D:85:C00000:0:0:0:": {
+        "tvh_id": "551",
+        "tvs_id": "NICKT",
+        "name": "Nicktoons"
+    },
+    "1:0:19:2BA2:3F2:1:C00000:0:0:0:": {
+        "tvs_id": "ZINFO",
+        "name": "ZDFinfo",
+        "tvfa_id": 36,
+        "tvm_id": "137",
+        "tvh_id": "276"
+    },
+    "1:0:1:79E0:443:1:C00000:0:0:0:": {
+        "tvs_id": "EURO",
+        "name": "Eurosport 1",
+        "tvfa_id": 29,
+        "tvm_id": "293",
+        "tvh_id": "65"
+    },
+    "1:0:1:3F:21:85:C00000:0:0:0:": {
+        "tvs_id": "DMAX",
+        "name": "DMAX",
+        "tvfa_id": 2,
+        "tvm_id": "52",
+        "tvh_id": "507"
+    },
+    "1:0:19:2777:409:1:C00000:0:0:0:": {
+        "tvs_id": "MTV",
+        "name": "MTV",
+        "tvfa_id": 17,
+        "tvm_id": "32",
+        "tvh_id": "10081"
+    },
+    "1:0:1:6DCA:44D:1:C00000:0:0:0:": {
+        "tvs_id": "ARD",
+        "name": "Das Erste",
+        "tvfa_id": 1,
+        "tvm_id": "1",
+        "tvh_id": "71"
+    },
+    "1:0:19:7C:C:85:C00000:0:0:0:": {
+        "tvs_id": "FOX",
+        "name": "FOX",
+        "tvm_id": "264",
+        "tvh_id": "565"
+    },
+    "1:0:1:1AFA:3FE:1:C00000:0:0:0:": {
+        "tvs_id": "FR24E",
+        "name": "France 24 (engl.)"
+    },
+    "1:0:1:4465:453:1:C00000:0:0:0:": {
+        "tvs_id": "K1DOKU",
+        "name": "kabel eins Doku",
+        "tvm_id": "167",
+        "tvh_id": "12043"
+    },
+    "1:0:1F:2:40B:1:C00000:0:0:0:": {
+        "tvs_id": "UHD1",
+        "name": "UHD1"
+    },
+    "1:0:1:6FEE:436:1:C00000:0:0:0:": {
+        "tvs_id": "MTV-H",
+        "name": "MTV Hits",
+        "tvm_id": "174",
+        "tvh_id": "738"
+    },
+    "1:0:19:7F:D:85:C00000:0:0:0:": {
+        "tvs_id": "13TH",
+        "name": "13th Street Universal",
+        "tvm_id": "88",
+        "tvh_id": "471"
+    },
+    "1:0:19:74:9:85:C00000:0:0:0:": {
+        "tvs_id": "SKY-A",
+        "name": "Sky Action",
+        "tvm_id": "274",
+        "tvh_id": "613"
+    },
+    "1:0:1:445C:453:1:C00000:0:0:0:": {
+        "tvs_id": "SAT1",
+        "name": "SAT.1",
+        "tvfa_id": 7,
+        "tvm_id": "4",
+        "tvh_id": "39"
+    },
+    "1:0:1:25:F:85:C00000:0:0:0:": {
+        "tvs_id": "SNHD",
+        "name": "Sky Sport News",
+        "tvm_id": "411",
+        "tvh_id": "762"
+    },
+    "1:0:19:2330:442:1:C00000:0:0:0:": {
+        "tvs_id": "FRA5",
+        "name": "France 5"
+    },
+    "1:0:19:2082:432:1:C00000:0:0:0:": {
+        "tvs_id": "FRAO",
+        "name": "France \u00d4"
+    },
+    "1:0:19:7D:9:85:C00000:0:0:0:": {
+        "tvs_id": "CNBC",
+        "name": "CNBC"
+    },
+    "1:0:19:2B66:3F3:1:C00000:0:0:0:": {
+        "tvs_id": "ZDF",
+        "name": "ZDF",
+        "tvfa_id": 6,
+        "tvm_id": "2",
+        "tvh_id": "37"
+    },
+    "1:0:1:6FFB:436:1:C00000:0:0:0:": {
+        "tvs_id": "NICKJ",
+        "name": "Nick Jr.",
+        "tvm_id": "310",
+        "tvh_id": "597"
+    },
+    "1:0:19:11:3:85:C00000:0:0:0:": {
+        "tvh_id": "561",
+        "tvs_id": "SKYF1",
+        "name": "Sky Sport F1"
+    },
+    "1:0:16:197:4:85:C00000:0:0:0:": {
+        "tvs_id": "SKY-F",
+        "name": "Sky Family",
+        "tvm_id": "169",
+        "tvh_id": "12042"
+    },
+    "1:0:19:2261:438:1:C00000:0:0:0:": {
+        "tvs_id": "CPLUS",
+        "name": "Canal+"
+    },
+    "1:0:19:283D:3FB:1:C00000:0:0:0:": {
+        "tvs_id": "ARD",
+        "name": "Das Erste",
+        "tvfa_id": 1,
+        "tvm_id": "1",
+        "tvh_id": "71"
+    },
+    "1:0:19:83:6:85:C00000:0:0:0:": {
+        "tvs_id": "CIN",
+        "name": "Sky Cinema Premieren",
+        "tvm_id": "270",
+        "tvh_id": "610"
+    },
+    "1:0:19:33A8:3EB:1:C00000:0:0:0:": {
+        "tvs_id": "BIBEL",
+        "name": "Bibel TV",
+        "tvm_id": "156",
+        "tvh_id": "280"
+    },
+    "1:0:19:2778:409:1:C00000:0:0:0:": {
+        "tvh_id": "483",
+        "tvs_id": "CH21",
+        "name": "Channel21"
+    },
+    "1:0:1:308:5:85:C00000:0:0:0:": {
+        "tvs_id": "SIXX",
+        "name": "sixx",
+        "tvfa_id": 10,
+        "tvm_id": "318",
+        "tvh_id": "694"
+    },
+    "1:0:19:33F7:3ED:1:C00000:0:0:0:": {
+        "tvs_id": "ORF2",
+        "name": "ORF 2",
+        "tvfa_id": 21,
+        "tvm_id": "17",
+        "tvh_id": "55"
+    },
+    "1:0:19:6C:C:85:C00000:0:0:0:": {
+        "tvs_id": "SNHD",
+        "name": "Sky Sport News",
+        "tvm_id": "411",
+        "tvh_id": "762"
+    },
+    "1:0:19:72:D:85:C00000:0:0:0:": {
+        "tvs_id": "SHD2",
+        "name": "Sky Sport HD 2",
+        "tvm_id": "315",
+        "tvh_id": "697"
+    },
+    "1:0:19:6EB2:3FD:1:C00000:0:0:0:": {
+        "tvs_id": "WDR",
+        "name": "WDR",
+        "tvfa_id": 43,
+        "tvm_id": "9",
+        "tvh_id": "46"
+    },
+    "1:0:16:29:2:85:C00000:0:0:0:": {
+        "tvh_id": "618",
+        "tvs_id": "SKY-H",
+        "name": "Sky Cinema Best Of"
+    },
+    "1:0:1:272E:402:1:C00000:0:0:0:": {
+        "tvs_id": "CNBC",
+        "name": "CNBC"
+    },
+    "1:0:19:2EAF:411:1:C00000:0:0:0:": {
+        "tvs_id": "RTL-N",
+        "name": "NITRO",
+        "tvfa_id": 3,
+        "tvm_id": "427",
+        "tvh_id": "763"
+    },
+    "1:0:1:30:5:85:C00000:0:0:0:": {
+        "tvs_id": "N24DOKU",
+        "name": "N24 Doku",
+        "tvm_id": "168",
+        "tvh_id": "12045"
+    },
+    "1:0:19:2889:40F:1:C00000:0:0:0:": {
+        "tvs_id": "ALPHA",
+        "name": "ARD alpha",
+        "tvfa_id": 5,
+        "tvm_id": "56",
+        "tvh_id": "104"
+    },
+    "1:0:1:746B:3F0:1:C00000:0:0:0:": {
+        "tvs_id": "DJUN",
+        "name": "Disney Junior",
+        "tvm_id": "171",
+        "tvh_id": "460"
+    },
+    "1:0:19:1F4A:42E:1:C00000:0:0:0:": {
+        "tvs_id": "MEZZO",
+        "tvm_id": "221",
+        "name": "Mezzo"
+    },
+    "1:0:16:2B:6:85:C00000:0:0:0:": {
+        "tvs_id": "CIN24",
+        "name": "Sky Cinema Premieren +24",
+        "tvm_id": "272",
+        "tvh_id": "612"
+    },
+    "1:0:1:6E40:431:1:C00000:0:0:0:": {
+        "tvs_id": "N3",
+        "name": "NDR",
+        "tvfa_id": 18,
+        "tvm_id": "6",
+        "tvh_id": "47"
+    },
+    "1:0:19:B:4:85:C00000:0:0:0:": {
+        "tvh_id": "12132",
+        "tvs_id": "SKYTH",
+        "name": "Sky Cinema Thriller"
+    },
+    "1:0:1:2EE3:441:1:C00000:0:0:0:": {
+        "tvs_id": "RTL",
+        "name": "RTL",
+        "tvfa_id": 22,
+        "tvm_id": "3",
+        "tvh_id": "38"
+    },
+    "1:0:16:13:2:85:C00000:0:0:0:": {
+        "tvs_id": "JUNIO",
+        "name": "Junior",
+        "tvm_id": "96",
+        "tvh_id": "160"
+    },
+    "1:0:1:20:21:85:C00000:0:0:0:": {
+        "tvs_id": "SKLAR",
+        "name": "Sonnenklar.TV",
+        "tvm_id": "259",
+        "tvh_id": "636"
+    },
+    "1:0:19:65:9:85:C00000:0:0:0:": {
+        "tvh_id": "782",
+        "tvs_id": "UNIVE",
+        "name": "Universal Channel HD"
+    },
+    "1:0:1:2753:402:1:C00000:0:0:0:": {
+        "tvs_id": "BLM",
+        "tvm_id": "125",
+        "name": "Bloomberg Europe TV"
+    },
+    "1:0:19:157F:41F:1:C00000:0:0:0:": {
+        "tvs_id": "DMC",
+        "name": "DELUXE MUSIC",
+        "tvm_id": "238",
+        "tvh_id": "511"
+    },
+    "1:0:19:70:D:85:C00000:0:0:0:": {
+        "tvs_id": "N-GHD",
+        "name": "Nat Geo HD",
+        "tvm_id": "190",
+        "tvh_id": "453"
+    },
+    "1:0:1:1158:404:1:C00000:0:0:0:": {
+        "tvs_id": "ALJAZ",
+        "name": "Al Jazeera"
+    },
+    "1:0:16:18:2:85:C00000:0:0:0:": {
+        "tvs_id": "CLASS",
+        "tvm_id": "95",
+        "name": "Classica"
+    },
+    "1:0:1:301:7:85:C00000:0:0:0:": {
+        "tvh_id": "483",
+        "tvs_id": "CH21",
+        "name": "Channel21"
+    },
+    "1:0:1:7008:436:1:C00000:0:0:0:": {
+        "tvs_id": "NICK",
+        "name": "nick",
+        "tvm_id": "69",
+        "tvh_id": "485"
+    },
+    "1:0:16:192:B:85:C00000:0:0:0:": {
+        "tvh_id": "136058",
+        "tvs_id": "CRIN",
+        "name": "CRIME + INVESTIGATION"
+    },
+    "1:0:19:85:3:85:C00000:0:0:0:": {
+        "tvh_id": "123",
+        "tvs_id": "BUTV",
+        "name": "Beate-Uhse.TV"
+    },
+    "1:0:1:7004:436:1:C00000:0:0:0:": {
+        "tvs_id": "CC",
+        "name": "Comedy Central",
+        "tvfa_id": 15,
+        "tvm_id": "14",
+        "tvh_id": "532"
+    },
+    "1:0:1:332D:45B:1:C00000:0:0:0:": {
+        "tvs_id": "ORF3",
+        "name": "ORF III",
+        "tvm_id": "447",
+        "tvh_id": "757"
+    },
+    "1:0:1:7006:436:1:C00000:0:0:0:": {
+        "tvs_id": "MTV",
+        "name": "MTV",
+        "tvfa_id": 17,
+        "tvm_id": "32",
+        "tvh_id": "10081"
+    },
+    "1:0:16:100A:451:35:C00000:0:0:0:": {
+        "tvs_id": "EURO2",
+        "name": "Eurosport 2",
+        "tvm_id": "239",
+        "tvh_id": "504"
+    },
+    "1:0:1:139D:3EA:1:C00000:0:0:0:": {
+        "tvs_id": "NHK",
+        "name": "NHK World TV"
+    },
+    "1:0:19:30D4:413:1:C00000:0:0:0:": {
+        "tvs_id": "SAT1G",
+        "name": "SAT.1 Gold",
+        "tvm_id": "430",
+        "tvh_id": "774"
+    },
+    "1:0:1:1146:404:1:C00000:0:0:0:": {
+        "tvs_id": "CNN",
+        "name": "CNN International",
+        "tvm_id": "42",
+        "tvh_id": "69"
+    },
+    "1:0:19:5273:41D:1:C00000:0:0:0:": {
+        "tvs_id": "CC",
+        "name": "Comedy Central",
+        "tvfa_id": 15,
+        "tvm_id": "14",
+        "tvh_id": "532"
+    },
+    "1:0:19:2870:425:1:C00000:0:0:0:": {
+        "tvs_id": "MDR",
+        "name": "MDR",
+        "tvfa_id": 12,
+        "tvm_id": "41",
+        "tvh_id": "48"
+    },
+    "1:0:19:2774:409:1:C00000:0:0:0:": {
+        "tvs_id": "TLC",
+        "name": "TLC",
+        "tvm_id": "445",
+        "tvh_id": "135954"
+    },
+    "1:0:1:28:21:85:C00000:0:0:0:": {
+        "tvs_id": "HSE",
+        "name": "HSE24",
+        "tvm_id": "53",
+        "tvh_id": "159"
+    },
+    "1:0:19:2856:401:1:C00000:0:0:0:": {
+        "tvs_id": "BR",
+        "name": "BR Nord",
+        "tvfa_id": 13,
+        "tvm_id": "5",
+        "tvh_id": "51"
+    },
+    "1:0:19:EF75:3F9:1:C00000:0:0:0:": {
+        "tvs_id": "PRO7",
+        "name": "ProSieben",
+        "tvfa_id": 11,
+        "tvm_id": "11",
+        "tvh_id": "40"
+    },
+    "1:0:1:6E92:4B1:1:C00000:0:0:0:": {
+        "tvs_id": "WDR",
+        "name": "WDR",
+        "tvfa_id": 43,
+        "tvm_id": "9",
+        "tvh_id": "46"
+    },
+    "1:0:19:1196:406:1:C00000:0:0:0:": {
+        "tvh_id": "12102",
+        "tvs_id": "ES1",
+        "name": "eSports1"
+    },
+    "1:0:1:7035:41B:1:C00000:0:0:0:": {
+        "tvs_id": "PHOEN",
+        "name": "PHOENIX",
+        "tvfa_id": 23,
+        "tvm_id": "60",
+        "tvh_id": "194"
+    },
+    "1:0:16:196:2:85:C00000:0:0:0:": {
+        "tvs_id": "KINOW",
+        "name": "KinoweltTV",
+        "tvm_id": "182",
+        "tvh_id": "450"
+    },
+    "1:0:19:81:6:85:C00000:0:0:0:": {
+        "tvs_id": "HDSPO",
+        "name": "Sky Sport HD 1",
+        "tvm_id": "281",
+        "tvh_id": "621"
+    },
+    "1:0:16:101D:451:35:C00000:0:0:0:": {
+        "tvs_id": "AXN",
+        "tvm_id": "177",
+        "name": "AXN"
+    },
+    "1:0:19:76:6:85:C00000:0:0:0:": {
+        "tvs_id": "N-GW",
+        "name": "NAT GEO WILD",
+        "tvm_id": "284",
+        "tvh_id": "626"
+    },
+    "1:0:19:132F:3EF:1:C00000:0:0:0:": {
+        "tvs_id": "ORF1",
+        "name": "ORF 1",
+        "tvfa_id": 31,
+        "tvm_id": "16",
+        "tvh_id": "54"
+    },
+    "1:0:19:21FD:44C:1:C00000:0:0:0:": {
+        "tvs_id": "FRA4",
+        "name": "France 4"
+    },
+    "1:0:1:7032:41B:1:C00000:0:0:0:": {
+        "tvs_id": "FES",
+        "name": "ONE",
+        "tvfa_id": 24,
+        "tvm_id": "122",
+        "tvh_id": "146"
+    },
+    "1:0:1:6D66:437:1:C00000:0:0:0:": {
+        "tvs_id": "ZDF",
+        "name": "ZDF",
+        "tvfa_id": 6,
+        "tvm_id": "2",
+        "tvh_id": "37"
+    },
+    "1:0:1:2EFE:441:1:C00000:0:0:0:": {
+        "tvs_id": "TOGGO",
+        "tvm_id": "101",
+        "name": "TOGGO plus"
+    },
+    "1:0:1:778B:424:1:C00000:0:0:0:": {
+        "tvh_id": "467",
+        "tvs_id": "PBOY",
+        "name": "Playboy TV"
+    },
+    "1:0:19:6EA6:4B1:1:C00000:0:0:0:": {
+        "tvs_id": "WDR",
+        "name": "WDR",
+        "tvfa_id": 43,
+        "tvm_id": "9",
+        "tvh_id": "46"
+    },
+    "1:0:1:32CA:45D:1:C00000:0:0:0:": {
+        "tvs_id": "ORF2",
+        "name": "ORF 2",
+        "tvfa_id": 21,
+        "tvm_id": "17",
+        "tvh_id": "55"
+    },
+    "1:0:19:30D6:413:1:C00000:0:0:0:": {
+        "tvs_id": "EURO",
+        "name": "Eurosport 1",
+        "tvfa_id": 29,
+        "tvm_id": "293",
+        "tvh_id": "65"
+    },
+    "1:0:1:6E2E:431:1:C00000:0:0:0:": {
+        "tvs_id": "RBB",
+        "name": "RBB",
+        "tvfa_id": 19,
+        "tvm_id": "57",
+        "tvh_id": "52"
+    },
+    "1:0:1:702:5:85:C00000:0:0:0:": {
+        "tvs_id": "QVC",
+        "name": "QVC",
+        "tvm_id": "54",
+        "tvh_id": "208"
+    },
+    "1:0:1:6FF1:436:1:C00000:0:0:0:": {
+        "tvs_id": "VH1",
+        "tvm_id": "187",
+        "name": "VH1 Classic"
+    },
+    "1:0:16:14C1:407:1:C00000:0:0:0:": {
+        "tvs_id": "SAT1E",
+        "name": "SAT.1 emotions",
+        "tvm_id": "428",
+        "tvh_id": "766"
+    },
+    "1:0:1:2F1C:441:1:C00000:0:0:0:": {
+        "tvs_id": "VOX",
+        "name": "VOX",
+        "tvfa_id": 30,
+        "tvm_id": "46",
+        "tvh_id": "42"
+    },
+    "1:0:1F:307A:3F5:1:C00000:0:0:0:": {
+        "tvs_id": "RTL",
+        "name": "RTL",
+        "tvfa_id": 22,
+        "tvm_id": "3",
+        "tvh_id": "38"
+    },
+    "1:0:1:4461:453:1:C00000:0:0:0:": {
+        "tvs_id": "PRO7M",
+        "name": "ProSieben MAXX",
+        "tvfa_id": 25,
+        "tvm_id": "436",
+        "tvh_id": "783"
+    },
+    "1:0:1:2F30:441:1:C00000:0:0:0:": {
+        "tvs_id": "RTLPL",
+        "name": "RTLplus",
+        "tvm_id": "102",
+        "tvh_id": "12033"
+    },
+    "1:0:1F:7DA:449:1:C00000:0:0:0:": {
+        "tvs_id": "QVCP",
+        "name": "QVC2"
+    },
+    "1:0:1:3139:459:1:C00000:0:0:0:": {
+        "tvs_id": "KTV",
+        "tvm_id": "183",
+        "name": "K-TV"
+    },
+    "1:0:1:296:5:85:C00000:0:0:0:": {
+        "tvs_id": "123TV",
+        "name": "123.tv"
+    },
+    "1:0:1:6DCB:44D:1:C00000:0:0:0:": {
+        "tvs_id": "BR",
+        "name": "BR Sued",
+        "tvfa_id": 13,
+        "tvm_id": "5",
+        "tvh_id": "51"
+    },
+    "1:0:19:157C:41F:1:C00000:0:0:0:": {
+        "tvs_id": "DISNE",
+        "name": "Disney Channel",
+        "tvfa_id": 27,
+        "tvm_id": "111",
+        "tvh_id": "139"
+    },
+    "1:0:19:1260:3F7:1:C00000:0:0:0:": {
+        "tvh_id": "544",
+        "tvs_id": "3PLUS",
+        "name": "3+"
+    },
+    "1:0:19:1194:406:1:C00000:0:0:0:": {
+        "tvs_id": "SPO-D",
+        "name": "sportdigital Fussball",
+        "tvm_id": "263",
+        "tvh_id": "564"
+    },
+    "1:0:19:EF78:3F9:1:C00000:0:0:0:": {
+        "tvs_id": "PRO7M",
+        "name": "ProSieben MAXX",
+        "tvfa_id": 25,
+        "tvm_id": "436",
+        "tvh_id": "783"
+    },
+    "1:0:1:7034:41B:1:C00000:0:0:0:": {
+        "tvs_id": "ARTE",
+        "name": "ARTE",
+        "tvfa_id": 37,
+        "tvm_id": "38",
+        "tvh_id": "58"
+    },
+    "1:0:1:6DCF:44D:1:C00000:0:0:0:": {
+        "tvs_id": "WDR",
+        "name": "WDR",
+        "tvfa_id": 43,
+        "tvm_id": "9",
+        "tvh_id": "46"
+    },
+    "1:0:1:445F:453:1:C00000:0:0:0:": {
+        "tvs_id": "WELT",
+        "name": "WELT",
+        "tvfa_id": 28,
+        "tvm_id": "31",
+        "tvh_id": "175"
+    },
+    "1:0:19:4331:300C:13E:820000:0:0:0:": {
+        "tvs_id": "SF1",
+        "name": "SRF 1",
+        "tvm_id": "24",
+        "tvh_id": "59"
+    },
+    "1:0:19:2E9B:411:1:C00000:0:0:0:": {
+        "tvs_id": "SUPER",
+        "name": "SUPER RTL",
+        "tvfa_id": 38,
+        "tvm_id": "13",
+        "tvh_id": "43"
+    },
+    "1:0:16:14C2:407:1:C00000:0:0:0:": {
+        "tvs_id": "K1CLA",
+        "name": "kabel eins classics",
+        "tvm_id": "209",
+        "tvh_id": "492"
+    },
+    "1:0:19:2888:40F:1:C00000:0:0:0:": {
+        "tvs_id": "FES",
+        "name": "ONE",
+        "tvfa_id": 24,
+        "tvm_id": "122",
+        "tvh_id": "146"
+    },
+    "1:0:16:8:3:85:C00000:0:0:0:": {
+        "tvh_id": "617",
+        "tvs_id": "SKY-C",
+        "name": "Sky Cinema Fun"
+    },
+    "1:0:19:2262:438:1:C00000:0:0:0:": {
+        "tvs_id": "CPLUSD",
+        "name": "Canal+ D\u00e9cal\u00e9"
+    }
+}

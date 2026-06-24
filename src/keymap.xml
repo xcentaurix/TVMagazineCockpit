@@ -1,0 +1,21 @@
+<keymap>
+	<map context="TVC_Actions">
+		<key flags="m" id="KEY_0" mapto="0"/>
+		<key flags="m" id="KEY_OK" mapto="ok"/>
+		<key flags="m" id="KEY_EXIT" mapto="cancel"/>
+		<key flags="m" id="KEY_RED" mapto="red"/>
+		<key flags="m" id="KEY_GREEN" mapto="green"/>
+		<key flags="m" id="KEY_YELLOW" mapto="yellow"/>
+		<key flags="m" id="KEY_BLUE" mapto="blue"/>
+		<key flags="mr" id="KEY_UP" mapto="up"/>
+		<key flags="mr" id="KEY_DOWN" mapto="down"/>
+		<key flags="mr" id="KEY_LEFT" mapto="left"/>
+		<key flags="mr" id="KEY_RIGHT" mapto="right"/>
+		<key flags="m" id="KEY_MENU" mapto="menu"/>
+		<key flags="mr" id="KEY_NEXT" mapto="next"/>
+		<key flags="mr" id="KEY_PREVIOUS" mapto="back"/>
+		<key flags="m" id="KEY_INFO" mapto="info"/>
+		<key flags="mr" id="KEY_CHANNELUP" mapto="channelup"/>
+		<key flags="mr" id="KEY_CHANNELDOWN" mapto="channeldown"/>
+	</map>
+</keymap>
