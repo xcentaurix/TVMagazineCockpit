@@ -1,0 +1,63 @@
+<?xml version="1.0" ?>
+<skin>
+	<screen flags="wfNoBorder" name="ProgramColumns" position="0,0" size="1920,1080">
+		<panel name="TopTemplate"/>
+		<widget font="Regular;27" halign="right" name="day_selector" position="1490,30" size="400,32" transparent="1" valign="center"/>
+		<widget alphatest="on" name="picon0" position="5,90" scaleFlags="scaleCenter" size="80,48"/>
+		<widget alphatest="on" name="programpix0" position="115,90" scaleFlags="scaleCenter" size="200,133"/>
+		<widget font="Regular;18" foregroundColor="yellow" name="channel0" position="5,147" size="110,46" transparent="1"/>
+		<widget font="Regular;21" foregroundColor="yellow" name="time0" position="5,200" size="95,28" transparent="1"/>
+		<widget font="Regular;21" foregroundColor="yellow" name="description0" position="5,235" size="310,50" transparent="1"/>
+		<widget alphatest="on" name="picon1" position="325,90" scaleFlags="scaleCenter" size="80,48"/>
+		<widget alphatest="on" name="programpix1" position="436,90" scaleFlags="scaleCenter" size="200,133"/>
+		<widget font="Regular;18" foregroundColor="yellow" name="channel1" position="325,147" size="110,46" transparent="1"/>
+		<widget font="Regular;21" foregroundColor="yellow" name="time1" position="325,200" size="95,28" transparent="1"/>
+		<widget font="Regular;21" foregroundColor="yellow" name="description1" position="325,235" size="310,50" transparent="1"/>
+		<widget alphatest="on" name="picon2" position="645,90" scaleFlags="scaleCenter" size="80,48"/>
+		<widget alphatest="on" name="programpix2" position="755,90" scaleFlags="scaleCenter" size="200,133"/>
+		<widget font="Regular;18" foregroundColor="yellow" name="channel2" position="645,147" size="110,46" transparent="1"/>
+		<widget font="Regular;21" foregroundColor="yellow" name="time2" position="645,200" size="95,28" transparent="1"/>
+		<widget font="Regular;21" foregroundColor="yellow" name="description2" position="645,235" size="310,50" transparent="1"/>
+		<widget alphatest="on" name="picon3" position="965,90" scaleFlags="scaleCenter" size="80,48"/>
+		<widget alphatest="on" name="programpix3" position="1075,90" scaleFlags="scaleCenter" size="200,133"/>
+		<widget font="Regular;18" foregroundColor="yellow" name="channel3" position="965,147" size="110,46" transparent="1"/>
+		<widget font="Regular;21" foregroundColor="yellow" name="time3" position="965,200" size="95,28" transparent="1"/>
+		<widget font="Regular;21" foregroundColor="yellow" name="description3" position="965,235" size="310,50" transparent="1"/>
+		<widget alphatest="on" name="picon4" position="1285,90" scaleFlags="scaleCenter" size="80,48"/>
+		<widget alphatest="on" name="programpix4" position="1395,90" scaleFlags="scaleCenter" size="200,133"/>
+		<widget font="Regular;18" foregroundColor="yellow" name="channel4" position="1285,147" size="110,46" transparent="1"/>
+		<widget font="Regular;21" foregroundColor="yellow" name="time4" position="1285,200" size="95,28" transparent="1"/>
+		<widget font="Regular;21" foregroundColor="yellow" name="description4" position="1285,235" size="310,50" transparent="1"/>
+		<widget alphatest="on" name="picon5" position="1605,90" scaleFlags="scaleCenter" size="80,48"/>
+		<widget alphatest="on" name="programpix5" position="1715,90" scaleFlags="scaleCenter" size="200,133"/>
+		<widget font="Regular;18" foregroundColor="yellow" name="channel5" position="1605,147" size="110,46" transparent="1"/>
+		<widget font="Regular;21" foregroundColor="yellow" name="time5" position="1605,200" size="95,28" transparent="1"/>
+		<widget font="Regular;21" foregroundColor="yellow" name="description5" position="1605,235" size="310,50" transparent="1"/>
+		<widget enableWrapAround="1" name="list0" position="0,300" scrollbarMode="showNever" size="320,690" transparent="1"/>
+		<widget enableWrapAround="1" name="list1" position="320,300" scrollbarMode="showNever" size="320,690" transparent="1"/>
+		<widget enableWrapAround="1" name="list2" position="640,300" scrollbarMode="showNever" size="320,690" transparent="1"/>
+		<widget enableWrapAround="1" name="list3" position="960,300" scrollbarMode="showNever" size="320,690" transparent="1"/>
+		<widget enableWrapAround="1" name="list4" position="1280,300" scrollbarMode="showNever" size="320,690" transparent="1"/>
+		<widget enableWrapAround="1" name="list5" position="1600,300" scrollbarMode="showNever" size="320,690" transparent="1"/>
+		<ePixmap pixmap="border/smallshadowline.png" position="0,e-60" size="e,3"/>
+		<panel name="ButtonTemplate"/>
+	</screen>
+	<screen flags="wfNoBorder" name="EventDetails" position="center,center" size="1800,930">
+		<eLabel backgroundColor="toptemplatecolor" position="0,0" size="e,75" zPosition="0"/>
+		<widget font="Bold;32" position="20,16" render="Label" size="e-40,44" source="Title" transparent="1" valign="center" zPosition="1"/>
+		<ePixmap pixmap="border/smallshadowline.png" position="0,73" size="e,3"/>
+		<widget name="picon" position="20,90" scale="1" scaleFlags="scaleCenter" size="100,100"/>
+		<widget font="Regular;32" name="title" position="150,90" size="1100,43" transparent="1" valign="center" zPosition="1"/>
+		<widget font="Regular;28" name="subtitle" position="150,145" size="1100,37" transparent="1" valign="center" zPosition="1"/>
+		<widget font="Regular;28" name="duration" position="150,190" size="300,37" transparent="1" valign="center" zPosition="1"/>
+		<widget font="Regular;26" name="description" position="20,250" size="1230,570" transparent="1"/>
+		<widget name="programpix" position="1270,90" scaleFlags="scaleCenter" size="500,375"/>
+		<widget name="videopix" position="1270,490" scaleFlags="scaleCenter" size="500,300"/>
+		<eLabel backgroundColor="toptemplatecolor" position="0,e-60" size="e,3"/>
+		<eLabel backgroundColor="toptemplatecolor" position="0,e-57" size="e,57" zPosition="0"/>
+		<widget font="Regular;26" foregroundColor="#e0331e" halign="center" name="key_red" position="0,e-46" size="450,36" transparent="1" zPosition="1"/>
+		<widget font="Regular;26" halign="center" name="key_green" position="450,e-46" size="450,36" transparent="1" zPosition="1"/>
+		<widget font="Regular;26" foregroundColor="#e0c31e" halign="center" name="key_yellow" position="900,e-46" size="450,36" transparent="1" zPosition="1"/>
+		<widget font="Regular;26" halign="center" name="key_blue" position="1350,e-46" size="450,36" transparent="1" zPosition="1"/>
+	</screen>
+</skin>

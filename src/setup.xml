@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress XmlUnboundNsPrefix -->
+<setupxml>
+	<setup key="tvmagazinecockpit" title="Setup">
+		<item text="Data source" description="Select the data source for event information.">config.plugins.tvmagazinecockpit.data_source</item>
+		<item text="Picon directory" description="Select the directory the picons are stored in.">config.plugins.tvmagazinecockpit.piconspath</item>
+		<item level="2" text="Log level" description="Select the debug log level.">config.plugins.tvmagazinecockpit.debug_log_level</item>
+	</setup>
+</setupxml>
