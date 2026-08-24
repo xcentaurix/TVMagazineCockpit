@@ -1,7 +1,6 @@
 # TVMagazineCockpit (TVC)
-![Screenshot](tvc1.png)
 
-![Screenshot](tvc2.png)
+![Screenshot](pic1.jpg)
 
 Open Enigma2 plugin to browse TV magazine(s)
 
@@ -12,9 +11,14 @@ Open Enigma2 plugin to browse TV magazine(s)
 - Provides additional TMDB event information (if plugin TMDBCockpit is installed)
 - Plays back trailer (if available)
 
+## Disclaimer
+The project author is not responsible for how this software is used by others. It is not intended to be used for accessing or distributing copyrighted materials without authorization.
+Users are solely responsible for determining the legality of their actions.
+
+This repository has no control over the streams, links, or the legality of the content provided by the different hosts (including all mirror sites). It is the end user's responsibility to ensure the legal use of these streams, and we strongly recommend verifying that the content complies with all applicable laws, including copyright laws and regulations of your country's jurisdiction before use.
+
 ## Limitations
-- Supports OpenViX and compatible distributions only
-- Is being tested on DM9xx only
+- Tested on OpenViX and OpenATV with DM900.
 
 ## Links
 - Installation: https://xcentaurix.github.io/TVMagazineCockpit

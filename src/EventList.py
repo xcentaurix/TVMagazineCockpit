@@ -1,5 +1,3 @@
-# !/usr/bin/python
-# coding=utf-8
 # Copyright (C) 2018-2026 by xcentaurix
 # License: GNU General Public License v3.0
 
@@ -27,9 +25,9 @@ class EventList(GUIComponent):
     def buildEntry(self, startHM, title, subtitle, year, _startTime, *_args):
         res = [None]
         res.append(MultiContentEntryText(pos=(5, 7), size=(55, 23), font=1, flags=RT_HALIGN_LEFT, text=str(startHM) if startHM else "", backcolor=None))
-        res.append(MultiContentEntryText(pos=(65, 5), size=(245, 75), font=0, flags=RT_HALIGN_LEFT | RT_WRAP, text=str(title) if title else "", backcolor=None))
-        res.append(MultiContentEntryText(pos=(65, 87), size=(245, 23), font=1, flags=RT_HALIGN_LEFT | RT_WRAP, text=str(subtitle) if subtitle else "", color=0xa0a0a0, color_sel=0xa0a0a0, backcolor=None))
-        res.append(MultiContentEntryText(pos=(65, 115), size=(245, 23), font=1, flags=RT_HALIGN_LEFT | RT_WRAP, text=str(year) if year else "", color=0xa0a0a0, color_sel=0xa0a0a0, backcolor=None))
+        res.append(MultiContentEntryText(pos=(65, 5), size=(245, 65), font=0, flags=RT_HALIGN_LEFT | RT_WRAP, text=str(title) if title else "", backcolor=None))
+        res.append(MultiContentEntryText(pos=(65, 77), size=(245, 23), font=1, flags=RT_HALIGN_LEFT | RT_WRAP, text=str(subtitle) if subtitle else "", color=0xa0a0a0, color_sel=0xa0a0a0, backcolor=None))
+        res.append(MultiContentEntryText(pos=(65, 110), size=(245, 23), font=1, flags=RT_HALIGN_LEFT | RT_WRAP, text=str(year) if year else "", color=0xa0a0a0, color_sel=0xa0a0a0, backcolor=None))
         res.append(MultiContentEntryText(pos=(0, 0), size=(320, 140), font=1, flags=RT_VALIGN_CENTER, text="", border_width=1, border_color=0x595959))
         return res
 

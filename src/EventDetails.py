@@ -8,6 +8,7 @@ import os
 from time import strftime, localtime
 from Screens.Screen import Screen
 from Components.ActionMap import ActionMap
+from Components.Button import Button
 from Components.Label import Label
 from Components.Pixmap import Pixmap
 from Components.ScrollLabel import ScrollLabel
@@ -51,13 +52,13 @@ class EventDetails(Screen, Picture):
             -2
         )
 
-        self['key_red'] = Label(_("Back"))
-        self['key_green'] = Label()
-        self["key_yellow"] = Label(_("Trailer"))
+        self['key_red'] = Button(_("Back"))
+        self['key_green'] = Button()
+        self["key_yellow"] = Button(_("Trailer"))
         if not self.video_url:
             self["key_yellow"].setText((""))
             self["key_yellow"].hide()
-        self['key_blue'] = Label()
+        self['key_blue'] = Button()
 
         self["programpix"] = Pixmap()
         self["videopix"] = Pixmap()
@@ -84,11 +85,11 @@ class EventDetails(Screen, Picture):
         if year:
             title += f" ({year})"
         self["title"].setText(title)
-        self["subtitle"].setText(self.event[idx["subtitle"]])
+        self["subtitle"].setText(self.event[idx["subtitle"]] or "")
         start_time = strftime("%H:%M", localtime(self.event[idx["startTime"]]))
         self["duration"].setText(f"{start_time}, {self.event[idx['duration']]} {_('min')}")
         self["picon"].setPixmap(getPicon(self.service_ref))
-        self["description"].setText(self.event[idx["description"]])
+        self["description"].setText(self.event[idx["description"]] or "")
 
     def _setup_images(self):
         """Setup and display images for the event"""

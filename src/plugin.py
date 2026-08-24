@@ -3,7 +3,7 @@
 
 
 from Plugins.Plugin import PluginDescriptor
-from .ConfigInit import ConfigInit
+from . import ConfigInit  # noqa: F401, pylint: disable=unused-import
 from .Debug import logger
 from .Version import VERSION
 from . import _
@@ -37,7 +37,6 @@ def autoStart(reason, **kwargs):
 
 
 def Plugins(**__kwargs):
-    ConfigInit()
     return [
         PluginDescriptor(
             where=[

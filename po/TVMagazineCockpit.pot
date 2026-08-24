@@ -130,3 +130,24 @@ msgstr ""
 
 msgid "License"
 msgstr ""
+
+msgid "Infobar/Play"
+msgstr ""
+
+msgid "Play/Pause"
+msgstr ""
+
+msgid "Stop playback"
+msgstr ""
+
+msgid "Skip forward"
+msgstr ""
+
+msgid "Skip backward"
+msgstr ""
+
+msgid "EPG Info"
+msgstr ""
+
+msgid "Do you want to resume playback at position: %d:%02d:%02d?"
+msgstr ""

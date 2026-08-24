@@ -6,7 +6,7 @@
 
 from Components.config import config, ConfigSelection, ConfigSubsection, ConfigNothing, ConfigDirectory, NoSave
 from Tools.Directories import resolveFilename, SCOPE_PLUGINS, SCOPE_CONFIG
-from .Debug import logger, log_levels, initLogging
+from .Debug import logger
 
 COLS = 6
 ROWS = 5
@@ -24,18 +24,13 @@ data_sources = {
 data_source_choices = list(data_sources.items())
 
 
-class ConfigInit():
-
-    def __init__(self):
-        logger.info("...")
-        config.plugins.tvmagazinecockpit = ConfigSubsection()
-        config.plugins.tvmagazinecockpit.fake_entry = NoSave(ConfigNothing())
-        config.plugins.tvmagazinecockpit.debug_log_level = ConfigSelection(
-            default="INFO", choices=list(log_levels.keys()))
-        config.plugins.tvmagazinecockpit.temp_dir = ConfigSelection(
-            default="/data/TVC", choices=[("/data/TVC", "/data/TVC")])
-        config.plugins.tvmagazinecockpit.data_source = ConfigSelection(
-            default="tvfa", choices=data_source_choices)
-        config.plugins.tvmagazinecockpit.piconspath = ConfigDirectory(
-            default="/usr/share/enigma2/picon/")
-        initLogging()
+logger.info("...")
+if not hasattr(config.plugins, "tvmagazinecockpit"):
+    config.plugins.tvmagazinecockpit = ConfigSubsection()
+config.plugins.tvmagazinecockpit.fake_entry = NoSave(ConfigNothing())
+config.plugins.tvmagazinecockpit.temp_dir = ConfigSelection(
+    default="/data/TVC", choices=[("/data/TVC", "/data/TVC")])
+config.plugins.tvmagazinecockpit.data_source = ConfigSelection(
+    default="tvfa", choices=data_source_choices)
+config.plugins.tvmagazinecockpit.piconspath = ConfigDirectory(
+    default="/usr/share/enigma2/picon/")
