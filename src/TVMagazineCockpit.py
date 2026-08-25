@@ -6,13 +6,13 @@
 
 import os
 from time import time, strftime, localtime
+from enigma import eTimer
 from Screens.Screen import Screen
 from Components.ActionMap import ActionMap
 from Components.Label import Label
 from Components.Pixmap import Pixmap
 from Components.Button import Button
 from Components.config import config
-from Components.Sources.StaticText import StaticText
 from .EventDetails import EventDetails
 from .More import More
 from .Menu import Menu
@@ -56,6 +56,10 @@ class TVMagazineCockpit(Screen, More, Menu, Picture):
         self.page_channel_list = []
         self.prime_event_indices = []
         self.timestamp = 0
+        # Tracks urlsendung values with an in-flight async detail fetch, so an
+        # event isn't fetched twice if it's still visible when showColumn()
+        # runs again before the first fetch completes.
+        self.pending_detail_fetches = set()
 
         self.navigation = Navigation(self)
         self.column_handler = Column(self)
@@ -65,7 +69,12 @@ class TVMagazineCockpit(Screen, More, Menu, Picture):
         self["key_green"] = Button(_("20:15"))
         self["key_yellow"] = Button(_("22:00"))
         self["key_blue"] = Button(_("Now"))
-        self["key_menu"] = StaticText(_("Setup"))
+        # The skin binds key_menu/key_info via plain name="..." (GUIComponent
+        # style, same as the Button widgets above) rather than source=/render=,
+        # so these need to be Buttons too - a Source like StaticText doesn't
+        # bind that way and silently fails to render.
+        self["key_menu"] = Button(_("Menu"))
+        self["key_info"] = Button(_("Info"))
 
         for i in range(COLS):
             self[f"list{i}"] = EventList()
@@ -101,11 +110,19 @@ class TVMagazineCockpit(Screen, More, Menu, Picture):
             prio=-1
         )
 
-        self.first = True
         createDirectory(self.temp_dir)
         self.events = loadEvents()
         self.onClose.append(self.__onClose__)
         self.onLayoutFinish.append(self.reload)
+
+        # The active column's selection highlight doesn't visually stick when
+        # enabled as part of the initial synchronous reload()/showPage() burst
+        # (six columns' setList()/moveToIndex() calls firing back-to-back with
+        # no GUI idle time in between), even though the exact same call works
+        # correctly moments later on a real keypress. Re-apply it once more
+        # shortly after layout settles.
+        self.selection_fixup_timer = eTimer()
+        self.selection_fixup_timer.callback.append(self.fixupSelection)
 
     def showPage(self, events=None):
         """Display the current page of TV channels."""
@@ -163,7 +180,7 @@ class TVMagazineCockpit(Screen, More, Menu, Picture):
 
     def key_ok(self):
         logger.info("...")
-        current_selection = self[f"list{self.navigation.list_index}"].l.getCurrentSelection()
+        current_selection = self[f"list{self.navigation.list_index}"].getCurrent()
         if current_selection:
             logger.debug("current_selection: %s", current_selection)
             service_ref = self.page_channel_list[self.navigation.list_index]
@@ -178,7 +195,7 @@ class TVMagazineCockpit(Screen, More, Menu, Picture):
     def key_red(self):
         logger.info("...")
         service_ref = self.page_channel_list[self.navigation.list_index]
-        current_selection = self[f"list{self.navigation.list_index}"].l.getCurrentSelection()
+        current_selection = self[f"list{self.navigation.list_index}"].getCurrent()
         self.openMore(service_ref, current_selection)
 
     def key_green(self):
@@ -202,16 +219,32 @@ class TVMagazineCockpit(Screen, More, Menu, Picture):
 
     def clearColumn(self, i):
         logger.info("i: %s", i)
-        self[f"list{i}"].l.setList([])
+        self[f"list{i}"].setList([])
         self[f"channel{i}"].setText("")
         self[f"picon{i}"].instance.setPixmap(None)
         self[f"programpix{i}"].instance.setPixmap(None)
         self[f"time{i}"].setText("")
         self[f"description{i}"].setText("")
+        # A cleared column with no channel data would otherwise still show its
+        # (now blank) bordered cell/labels as an empty box in the grid - hide
+        # the whole slot instead so it collapses into genuinely empty space.
+        self[f"list{i}"].hide()
+        self[f"channel{i}"].hide()
+        self[f"picon{i}"].hide()
+        self[f"programpix{i}"].hide()
+        self[f"time{i}"].hide()
+        self[f"description{i}"].hide()
+
+    def showColumnWidgets(self, i):
+        self[f"list{i}"].show()
+        self[f"channel{i}"].show()
+        self[f"picon{i}"].show()
+        self[f"programpix{i}"].show()
+        self[f"time{i}"].show()
+        self[f"description{i}"].show()
 
     def reload(self):
         logger.info("self.channel_list: %s", self.channel_list)
-        self[f"list{self.navigation.list_index}"].setSelectionEnable(False)
         self.channel_dict = readChannelDict()
         self.channel_list = readChannelList(self.channel_dict)
         self.navigation.reload(len(self.channel_list))
@@ -223,8 +256,15 @@ class TVMagazineCockpit(Screen, More, Menu, Picture):
         self.list_columns = [[] for _i in range(COLS)]
         self.list_indices = [-1] * COLS
         self.prime_event_indices = [-1] * COLS
-        self[f"list{self.navigation.list_index}"].setSelectionEnable(True)
+        # showPage() (below) sets each column's list, which resets its selection
+        # to the skin template's default (disabled - see screenpart_EventCell.xmlinc)
+        # and then re-enables just the active column, so no explicit
+        # setSelectionEnable() calls are needed here.
         self.page_handler.showPage()
+        self.selection_fixup_timer.start(50, True)
+
+    def fixupSelection(self):
+        self[f"list{self.navigation.list_index}"].setSelectionEnable(True)
 
     def __onClose__(self):
         logger.info("...")

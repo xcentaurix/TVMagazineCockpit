@@ -6,6 +6,8 @@
 
 from Components.config import config, ConfigSelection, ConfigSubsection, ConfigNothing, ConfigDirectory, NoSave
 from Tools.Directories import resolveFilename, SCOPE_PLUGINS, SCOPE_CONFIG
+from .ChannelListUtils import getTVBouquets
+from .__init__ import _
 from .Debug import logger
 
 COLS = 6
@@ -34,3 +36,5 @@ config.plugins.tvmagazinecockpit.data_source = ConfigSelection(
     default="tvfa", choices=data_source_choices)
 config.plugins.tvmagazinecockpit.piconspath = ConfigDirectory(
     default="/usr/share/enigma2/picon/")
+config.plugins.tvmagazinecockpit.bouquet = ConfigSelection(
+    default="", choices=[("", _("Auto (bouquet of currently playing service)"))] + getTVBouquets())

@@ -61,7 +61,6 @@ class EventDetails(Screen, Picture):
         self['key_blue'] = Button()
 
         self["programpix"] = Pixmap()
-        self["videopix"] = Pixmap()
         self["picon"] = Pixmap()
 
         self["title"] = Label()

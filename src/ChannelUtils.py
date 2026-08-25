@@ -8,7 +8,6 @@ import os
 import json
 from enigma import eServiceCenter, eServiceReference
 from Screens.ChannelSelection import service_types_tv
-from Screens.InfoBar import InfoBar
 from Components.config import config
 from .ChannelListUtils import getServiceList
 from .ConfigInit import plugindir, configdir
@@ -25,12 +24,27 @@ def getCurrentBouquet():
 
 def getCurrentBouquetName(session):
     logger.info("...")
+    configured_bouquet = config.plugins.tvmagazinecockpit.bouquet.value
+    if configured_bouquet:
+        bouquet_ref = eServiceReference(configured_bouquet)
+        info = eServiceCenter.getInstance().info(bouquet_ref)
+        if info:
+            return info.getName(bouquet_ref)
     bouquet_name = _("Unknown")
     service = session.nav.getCurrentlyPlayingServiceReference()
     if service:
         allservice = eServiceReference(f"{service_types_tv} ORDER BY name")
         serviceHandler = eServiceCenter.getInstance()
-        bouquet_root = InfoBar.instance.servicelist.bouquet_root
+        # Built directly (matching ChannelSelection.recallBouquetMode()) rather than read from
+        # InfoBar.instance.servicelist.bouquet_root, which reflects whatever bouquet the channel
+        # list UI last happened to be navigated to in this session - before that ever happens
+        # (e.g. the first time this runs after a restart) it can point at the wrong root and
+        # resolve the current service to whichever bouquet the search reaches first, such as an
+        # auto-created "Last scanned" bouquet, instead of the user's real one.
+        if config.usage.multibouquet.value:
+            bouquet_root = eServiceReference('1:7:1:0:0:0:0:0:0:0:FROM BOUQUET "bouquets.tv" ORDER BY bouquet')
+        else:
+            bouquet_root = eServiceReference(f'{service_types_tv} FROM BOUQUET "userbouquet.favourites.tv" ORDER BY bouquet')
         bouquet = bouquet_root
         bouquetlist = serviceHandler.list(bouquet_root)
         if bouquetlist is not None:
@@ -54,16 +68,18 @@ def getBouquetServices(bouquet, channel_dict):
     # Get the list of services (channels) in the bouquet
     service_list = getServiceList(bouquet)
     services = []
+    data_source_id = config.plugins.tvmagazinecockpit.data_source.value + "_id"
     for service, _name in service_list:
         channel = channel_dict.get(service, {})
-        if "::" not in service and config.plugins.tvmagazinecockpit.data_source.value + "_id" in channel:
+        if "::" not in service and channel.get("name") and channel.get(data_source_id):
             services.append(service)
     logger.debug("services: %s", services)
     return services
 
 
 def readChannelList(channel_dict):
-    services = getBouquetServices(getCurrentBouquet(), channel_dict)
+    bouquet = config.plugins.tvmagazinecockpit.bouquet.value or getCurrentBouquet()
+    services = getBouquetServices(bouquet, channel_dict)
     return services
 
 

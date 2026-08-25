@@ -13,6 +13,7 @@ idx = {
     'country': 5,
     'category': 6,
     'genre': 7,
+    'is_new': 9,
     'endTime': 8,
     'duration': 10,
     'channel': 11,

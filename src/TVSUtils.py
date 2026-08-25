@@ -56,6 +56,7 @@ descriptionre_com = re.compile(
     r'<section class="broadcast-detail__description">(.*?)</section>', re.S)
 descriptionreg_com = re.compile(r'<p>(.*?)</p>', re.S)
 episode_title_com = re.compile(r'<h2 class="broadcast-info">(.*?)</h2>', re.S)
+is_new_com = re.compile(r'<span class="add-info icon-tip nodistance">NEU</span>', re.S)
 
 
 def tvs_parse(html_data):
@@ -149,6 +150,7 @@ def tvs_parse_details(html_data, event):
         event[idx['photo_url']] = ""
         event[idx['description']] = ""
         event[idx['subtitle']] = ""
+        event[idx['is_new']] = False
         return event
 
     # Extract video URL (GreenVideo)
@@ -178,6 +180,9 @@ def tvs_parse_details(html_data, event):
             for desval in descriptionreg_val:
                 if desval:
                     event[idx['description']] += desval + "\n\n"
+
+    # Extract "NEU" badge
+    event[idx['is_new']] = bool(is_new_com.search(html_data))
 
     # Extract episode subtitle/title from broadcast-info header
     episode_title_val = episode_title_com.search(html_data)

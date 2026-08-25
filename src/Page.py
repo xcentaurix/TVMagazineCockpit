@@ -38,7 +38,7 @@ class Page:
         logger.debug("self.channel_list: %s", self.parent.channel_list)
 
         missing_channels_list = []
-        logger.info("self.events: %s", self.parent.events)
+        logger.debug("self.events: %s", self.parent.events)
 
         # Calculate page range
         start = self.navigation.page_index * COLS
@@ -52,38 +52,48 @@ class Page:
             channel = self.parent.channel_dict.get(service_ref, {})
             if channel:
                 logger.debug("channel: %s", channel)
+                self.parent.showColumnWidgets(i)
                 self.parent[f"channel{i}"].setText(channel["name"])
                 column_events = self.parent.events.get(
                     self.navigation.date_str, {}).get(service_ref, {})
                 if column_events:
                     logger.debug("data already available")
                     self.parent.showColumn(column_events, service_ref, channel)
-                    # Set selection on first column if this is first load
-                    if i == 0 and self.parent.first:
-                        self.parent.first = False
-                        self.parent["list0"].setSelectionEnable(True)
                 else:
                     logger.debug("need to download data")
                     missing_channels_list.append(service_ref)
                     self.parent.showColumn(column_events, service_ref, channel)
+            else:
+                logger.debug("service_ref not in channel_dict: %s", service_ref)
+                self.parent.clearColumn(i)
         i = len(self.parent.page_channel_list)
         while i < COLS:
             self.parent.clearColumn(i)
             i += 1
 
-        # Handle missing events
+        # Each column's setList() resets its selection to the skin template's
+        # default (disabled - see screenpart_EventCell.xmlinc), so the active
+        # column's highlight has to be re-applied every time the page content
+        # is refreshed, not just once on first load.
+        self.parent[f"list{self.navigation.list_index}"].setSelectionEnable(True)
+
+        # Handle missing events. Only kick off a download on the first pass
+        # through this page (events is None) - once the download callback
+        # re-enters showPage() with the merged results, whatever is still
+        # missing genuinely has no data and must not re-trigger another
+        # download, or a channel with no data on the source would loop
+        # forever instead of settling on "no data available".
         logger.debug("missing_channels_list: %s", missing_channels_list)
-        if len(missing_channels_list) == len(self.parent.page_channel_list):
-            if events is None:
-                self.parent.tvmagazine_data.downloadEvents(
-                    self.navigation.date_str,
-                    missing_channels_list,
-                    self.parent.events,
-                    self.showPage
-                )
-                title = f"{self.parent.data_source} - {_('Bouquet')}: {self.parent.bouquet} - {_('Loading...')}"
-            else:
-                title = f"{self.parent.data_source} - {_('Bouquet')}: {self.parent.bouquet} - {_('No event data available')}"
+        if missing_channels_list and events is None:
+            self.parent.tvmagazine_data.downloadEvents(
+                self.navigation.date_str,
+                missing_channels_list,
+                self.parent.events,
+                self.showPage
+            )
+            title = f"{self.parent.data_source} - {_('Bouquet')}: {self.parent.bouquet} - {_('Loading...')}"
+        elif missing_channels_list and len(missing_channels_list) == len(self.parent.page_channel_list):
+            title = f"{self.parent.data_source} - {_('Bouquet')}: {self.parent.bouquet} - {_('No event data available')}"
         else:
             title = f"{self.parent.data_source} - {_('Bouquet')}: {self.parent.bouquet}, {_('Page')}: {self.navigation.page_index + 1}/{self.navigation.pages}, {_('Services')}: {len(self.parent.channel_list)}"
 

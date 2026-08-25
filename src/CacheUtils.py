@@ -30,7 +30,7 @@ def loadEvents():
 
 
 def saveEvents(events):
-    logger.info("Saving events: %s", events)
+    logger.debug("Saving events: %s", events)
     cache_path = os.path.join(
         config.plugins.tvmagazinecockpit.temp_dir.value, date_str, "events.json")
     if date_str in events:

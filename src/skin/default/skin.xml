@@ -16,14 +16,14 @@
 		<eLabel backgroundColor="barBG" position="0,0" size="e,55"/>
 		<widget font="Bold;38" position="10,0" render="Label" size="e-20,55" source="Title" transparent="1" valign="center" zPosition="1"/>
 		<eLabel backgroundColor="separator" position="0,54" size="e,2"/>
-		<widget font="Regular;20" halign="right" name="day_selector" position="1490,15" size="420,26" transparent="1" valign="center"/>
+		<widget font="Regular;20" halign="right" name="day_selector" position="1490,15" size="420,26" transparent="1" valign="center" zPosition="2"/>
 		<widget alphatest="on" name="picon0" position="5,66" scaleFlags="scaleCenter" size="80,48"/>
 		<widget alphatest="on" name="programpix0" position="115,66" scaleFlags="scaleCenter" size="200,133"/>
 		<widget font="Regular;20" foregroundColor="yellow" name="channel0" position="5,123" size="110,46" transparent="1"/>
 		<widget font="Regular;20" foregroundColor="yellow" name="time0" position="5,176" size="95,28" transparent="1"/>
 		<widget font="Regular;20" foregroundColor="yellow" name="description0" position="5,211" size="310,50" transparent="1"/>
 		<widget alphatest="on" name="picon1" position="325,66" scaleFlags="scaleCenter" size="80,48"/>
-		<widget alphatest="on" name="programpix1" position="436,66" scaleFlags="scaleCenter" size="200,133"/>
+		<widget alphatest="on" name="programpix1" position="435,66" scaleFlags="scaleCenter" size="200,133"/>
 		<widget font="Regular;20" foregroundColor="yellow" name="channel1" position="325,123" size="110,46" transparent="1"/>
 		<widget font="Regular;20" foregroundColor="yellow" name="time1" position="325,176" size="95,28" transparent="1"/>
 		<widget font="Regular;20" foregroundColor="yellow" name="description1" position="325,211" size="310,50" transparent="1"/>
@@ -47,12 +47,102 @@
 		<widget font="Regular;20" foregroundColor="yellow" name="channel5" position="1605,123" size="110,46" transparent="1"/>
 		<widget font="Regular;20" foregroundColor="yellow" name="time5" position="1605,176" size="95,28" transparent="1"/>
 		<widget font="Regular;20" foregroundColor="yellow" name="description5" position="1605,211" size="310,50" transparent="1"/>
-		<widget enableWrapAround="1" name="list0" position="0,275" scrollbarMode="showNever" size="320,743" transparent="1"/>
-		<widget enableWrapAround="1" name="list1" position="320,275" scrollbarMode="showNever" size="320,743" transparent="1"/>
-		<widget enableWrapAround="1" name="list2" position="640,275" scrollbarMode="showNever" size="320,743" transparent="1"/>
-		<widget enableWrapAround="1" name="list3" position="960,275" scrollbarMode="showNever" size="320,743" transparent="1"/>
-		<widget enableWrapAround="1" name="list4" position="1280,275" scrollbarMode="showNever" size="320,743" transparent="1"/>
-		<widget enableWrapAround="1" name="list5" position="1600,275" scrollbarMode="showNever" size="320,743" transparent="1"/>
+		<widget backgroundColorSelected="keyBlue" enableWrapAround="1" position="0,275" render="Listbox" scrollbarMode="showNever" size="320,750" source="list0" transparent="1">
+			<convert type="TemplatedMultiContent">
+			{
+				"template": [
+					MultiContentEntryText(pos=(0, 0), size=(320, 150), font=1, flags=RT_VALIGN_CENTER, text="", border_width=1, border_color=0x595959),
+					MultiContentEntryText(pos=(5, 5), size=(55, 25), font=1, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER, text=0),
+					MultiContentEntryText(pos=(5, 32), size=(55, 20), font=2, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER, text=9),
+					MultiContentEntryText(pos=(65, 5), size=(245, 75), font=0, flags=RT_HALIGN_LEFT | RT_WRAP, text=1),
+					MultiContentEntryText(pos=(65, 90), size=(245, 25), font=1, flags=RT_HALIGN_LEFT | RT_WRAP, text=2, color=0xa0a0a0, color_sel=0xa0a0a0),
+					MultiContentEntryText(pos=(65, 118), size=(245, 25), font=1, flags=RT_HALIGN_LEFT | RT_WRAP, text=3, color=0xa0a0a0, color_sel=0xa0a0a0),
+				],
+				"fonts": [gFont("Regular", 23), gFont("Regular", 20), gFont("Regular", 17)],
+				"itemHeight": 150, "selectionEnabled": False
+			}
+			</convert>
+		</widget>
+		<widget backgroundColorSelected="keyBlue" enableWrapAround="1" position="320,275" render="Listbox" scrollbarMode="showNever" size="320,750" source="list1" transparent="1">
+			<convert type="TemplatedMultiContent">
+			{
+				"template": [
+					MultiContentEntryText(pos=(0, 0), size=(320, 150), font=1, flags=RT_VALIGN_CENTER, text="", border_width=1, border_color=0x595959),
+					MultiContentEntryText(pos=(5, 5), size=(55, 25), font=1, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER, text=0),
+					MultiContentEntryText(pos=(5, 32), size=(55, 20), font=2, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER, text=9),
+					MultiContentEntryText(pos=(65, 5), size=(245, 75), font=0, flags=RT_HALIGN_LEFT | RT_WRAP, text=1),
+					MultiContentEntryText(pos=(65, 90), size=(245, 25), font=1, flags=RT_HALIGN_LEFT | RT_WRAP, text=2, color=0xa0a0a0, color_sel=0xa0a0a0),
+					MultiContentEntryText(pos=(65, 118), size=(245, 25), font=1, flags=RT_HALIGN_LEFT | RT_WRAP, text=3, color=0xa0a0a0, color_sel=0xa0a0a0),
+				],
+				"fonts": [gFont("Regular", 23), gFont("Regular", 20), gFont("Regular", 17)],
+				"itemHeight": 150, "selectionEnabled": False
+			}
+			</convert>
+		</widget>
+		<widget backgroundColorSelected="keyBlue" enableWrapAround="1" position="640,275" render="Listbox" scrollbarMode="showNever" size="320,750" source="list2" transparent="1">
+			<convert type="TemplatedMultiContent">
+			{
+				"template": [
+					MultiContentEntryText(pos=(0, 0), size=(320, 150), font=1, flags=RT_VALIGN_CENTER, text="", border_width=1, border_color=0x595959),
+					MultiContentEntryText(pos=(5, 5), size=(55, 25), font=1, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER, text=0),
+					MultiContentEntryText(pos=(5, 32), size=(55, 20), font=2, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER, text=9),
+					MultiContentEntryText(pos=(65, 5), size=(245, 75), font=0, flags=RT_HALIGN_LEFT | RT_WRAP, text=1),
+					MultiContentEntryText(pos=(65, 90), size=(245, 25), font=1, flags=RT_HALIGN_LEFT | RT_WRAP, text=2, color=0xa0a0a0, color_sel=0xa0a0a0),
+					MultiContentEntryText(pos=(65, 118), size=(245, 25), font=1, flags=RT_HALIGN_LEFT | RT_WRAP, text=3, color=0xa0a0a0, color_sel=0xa0a0a0),
+				],
+				"fonts": [gFont("Regular", 23), gFont("Regular", 20), gFont("Regular", 17)],
+				"itemHeight": 150, "selectionEnabled": False
+			}
+			</convert>
+		</widget>
+		<widget backgroundColorSelected="keyBlue" enableWrapAround="1" position="960,275" render="Listbox" scrollbarMode="showNever" size="320,750" source="list3" transparent="1">
+			<convert type="TemplatedMultiContent">
+			{
+				"template": [
+					MultiContentEntryText(pos=(0, 0), size=(320, 150), font=1, flags=RT_VALIGN_CENTER, text="", border_width=1, border_color=0x595959),
+					MultiContentEntryText(pos=(5, 5), size=(55, 25), font=1, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER, text=0),
+					MultiContentEntryText(pos=(5, 32), size=(55, 20), font=2, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER, text=9),
+					MultiContentEntryText(pos=(65, 5), size=(245, 75), font=0, flags=RT_HALIGN_LEFT | RT_WRAP, text=1),
+					MultiContentEntryText(pos=(65, 90), size=(245, 25), font=1, flags=RT_HALIGN_LEFT | RT_WRAP, text=2, color=0xa0a0a0, color_sel=0xa0a0a0),
+					MultiContentEntryText(pos=(65, 118), size=(245, 25), font=1, flags=RT_HALIGN_LEFT | RT_WRAP, text=3, color=0xa0a0a0, color_sel=0xa0a0a0),
+				],
+				"fonts": [gFont("Regular", 23), gFont("Regular", 20), gFont("Regular", 17)],
+				"itemHeight": 150, "selectionEnabled": False
+			}
+			</convert>
+		</widget>
+		<widget backgroundColorSelected="keyBlue" enableWrapAround="1" position="1280,275" render="Listbox" scrollbarMode="showNever" size="320,750" source="list4" transparent="1">
+			<convert type="TemplatedMultiContent">
+			{
+				"template": [
+					MultiContentEntryText(pos=(0, 0), size=(320, 150), font=1, flags=RT_VALIGN_CENTER, text="", border_width=1, border_color=0x595959),
+					MultiContentEntryText(pos=(5, 5), size=(55, 25), font=1, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER, text=0),
+					MultiContentEntryText(pos=(5, 32), size=(55, 20), font=2, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER, text=9),
+					MultiContentEntryText(pos=(65, 5), size=(245, 75), font=0, flags=RT_HALIGN_LEFT | RT_WRAP, text=1),
+					MultiContentEntryText(pos=(65, 90), size=(245, 25), font=1, flags=RT_HALIGN_LEFT | RT_WRAP, text=2, color=0xa0a0a0, color_sel=0xa0a0a0),
+					MultiContentEntryText(pos=(65, 118), size=(245, 25), font=1, flags=RT_HALIGN_LEFT | RT_WRAP, text=3, color=0xa0a0a0, color_sel=0xa0a0a0),
+				],
+				"fonts": [gFont("Regular", 23), gFont("Regular", 20), gFont("Regular", 17)],
+				"itemHeight": 150, "selectionEnabled": False
+			}
+			</convert>
+		</widget>
+		<widget backgroundColorSelected="keyBlue" enableWrapAround="1" position="1600,275" render="Listbox" scrollbarMode="showNever" size="320,750" source="list5" transparent="1">
+			<convert type="TemplatedMultiContent">
+			{
+				"template": [
+					MultiContentEntryText(pos=(0, 0), size=(320, 150), font=1, flags=RT_VALIGN_CENTER, text="", border_width=1, border_color=0x595959),
+					MultiContentEntryText(pos=(5, 5), size=(55, 25), font=1, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER, text=0),
+					MultiContentEntryText(pos=(5, 32), size=(55, 20), font=2, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER, text=9),
+					MultiContentEntryText(pos=(65, 5), size=(245, 75), font=0, flags=RT_HALIGN_LEFT | RT_WRAP, text=1),
+					MultiContentEntryText(pos=(65, 90), size=(245, 25), font=1, flags=RT_HALIGN_LEFT | RT_WRAP, text=2, color=0xa0a0a0, color_sel=0xa0a0a0),
+					MultiContentEntryText(pos=(65, 118), size=(245, 25), font=1, flags=RT_HALIGN_LEFT | RT_WRAP, text=3, color=0xa0a0a0, color_sel=0xa0a0a0),
+				],
+				"fonts": [gFont("Regular", 23), gFont("Regular", 20), gFont("Regular", 17)],
+				"itemHeight": 150, "selectionEnabled": False
+			}
+			</convert>
+		</widget>
 		<eLabel backgroundColor="separator" position="0,e-56" size="e,2"/>
 		<eLabel backgroundColor="barBG" position="0,e-55" size="e,55"/>
 		<widget conditional="key_red" font="Regular;32" foregroundColor="keyRed" halign="center" name="key_red" position="0,1032" size="435,38" transparent="1" valign="center" zPosition="2"/>
@@ -66,13 +156,12 @@
 		<eLabel backgroundColor="barBG" position="0,0" size="e,55"/>
 		<widget font="Bold;38" position="10,0" render="Label" size="e-20,55" source="Title" transparent="1" valign="center" zPosition="1"/>
 		<eLabel backgroundColor="separator" position="0,54" size="e,2"/>
-		<widget name="picon" position="20,70" scale="1" scaleFlags="scaleCenter" size="100,100"/>
+		<widget alphatest="on" name="picon" position="20,70" scale="1" scaleFlags="scaleCenter" size="100,100"/>
 		<widget font="Regular;38" name="title" position="150,70" size="1100,43" transparent="1" valign="center" zPosition="1"/>
 		<widget font="Regular;32" name="subtitle" position="150,125" size="1100,37" transparent="1" valign="center" zPosition="1"/>
 		<widget font="Regular;32" name="duration" position="150,170" size="300,37" transparent="1" valign="center" zPosition="1"/>
 		<widget font="Regular;32" name="description" position="20,230" size="1230,560" transparent="1"/>
 		<widget name="programpix" position="1270,70" scaleFlags="scaleCenter" size="500,375"/>
-		<widget name="videopix" position="1270,470" scaleFlags="scaleCenter" size="500,300"/>
 		<eLabel backgroundColor="separator" position="0,e-56" size="e,2"/>
 		<eLabel backgroundColor="barBG" position="0,e-55" size="e,55"/>
 		<widget conditional="key_red" font="Regular;32" foregroundColor="keyRed" halign="center" name="key_red" position="0,882" size="405,38" transparent="1" valign="center" zPosition="2"/>

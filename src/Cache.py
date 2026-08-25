@@ -42,7 +42,7 @@ class Cache:
             )
 
     def downloadEventsCallback(self, events):
-        logger.info("events: %s", events)
+        logger.debug("events: %s", events)
         start_time = timestamp_to_day_int(time()) + 20 * 3600 + 15 * 60
 
         events_of_the_day = events.get(self.date_str, {})
