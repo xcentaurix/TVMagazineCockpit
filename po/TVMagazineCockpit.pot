@@ -119,18 +119,6 @@ msgstr ""
 msgid "Setup"
 msgstr ""
 
-msgid "Plugin"
-msgstr ""
-
-msgid "Version"
-msgstr ""
-
-msgid "Copyright"
-msgstr ""
-
-msgid "License"
-msgstr ""
-
 msgid "Infobar/Play"
 msgstr ""
 

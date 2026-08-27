@@ -15,12 +15,11 @@ from Components.Button import Button
 from Components.config import config
 from .EventDetails import EventDetails
 from .More import More
-from .Menu import Menu
 from .__init__ import _
 from .EventList import EventList
 from .Debug import logger
 from .TVMagazineData import TVMagazineData
-from .FileUtils import createDirectory
+from .FileUtils import createDirectory, deleteDirectory
 from .ChannelUtils import readChannelList, readChannelDict, getCurrentBouquetName
 from .Picture import Picture
 from .Column import Column
@@ -29,16 +28,16 @@ from .ConfigInit import COLS
 from .Page import Page
 from .ConfigInit import data_sources
 from .CacheUtils import loadEvents
+from .SetupScreen import SetupScreen
 
 
-class TVMagazineCockpit(Screen, More, Menu, Picture):
+class TVMagazineCockpit(Screen, More, Picture):
 
     def __init__(self, session):
         logger.info("...")
         Screen.__init__(self, session)
         self.skinName = "ProgramColumns"
         More.__init__(self, session)
-        Menu.__init__(self, session)
         self.channel_dict = readChannelDict()
         self.channel_list = readChannelList(self.channel_dict)
         self.tvmagazine_data = TVMagazineData(self.channel_dict)
@@ -73,8 +72,8 @@ class TVMagazineCockpit(Screen, More, Menu, Picture):
         # style, same as the Button widgets above) rather than source=/render=,
         # so these need to be Buttons too - a Source like StaticText doesn't
         # bind that way and silently fails to render.
-        self["key_menu"] = Button(_("Menu"))
-        self["key_info"] = Button(_("Info"))
+        self["key_menu"] = Button("Menu")
+        self["key_info"] = Button("Info")
 
         for i in range(COLS):
             self[f"list{i}"] = EventList()
@@ -215,7 +214,29 @@ class TVMagazineCockpit(Screen, More, Menu, Picture):
 
     def key_menu(self):
         logger.info("...")
-        self.openMenu()
+        self.session.openWithCallback(
+            self.openSetupScreenCallback,
+            SetupScreen,
+        )
+
+    def openSetupScreenCallback(self, changed=False):
+        logger.info("changed: %s", changed)
+        if changed:
+            prev_temp_dir = os.path.dirname(self.temp_dir)
+            logger.debug("Previous temp directory: %s", prev_temp_dir)
+            self.temp_dir = os.path.join(
+                config.plugins.tvmagazinecockpit.temp_dir.value, self.date_str)
+            logger.debug("New temp directory: %s", self.temp_dir)
+            if self.data_source_id != config.plugins.tvmagazinecockpit.data_source.value + "_id":
+                self.data_source_id = config.plugins.tvmagazinecockpit.data_source.value + "_id"
+                logger.debug("Data source ID changed to: %s",
+                             self.data_source_id)
+                for i in range(COLS):
+                    self.clearColumn(i)
+                deleteDirectory(prev_temp_dir)
+                createDirectory(self.temp_dir)
+                self.events = {}
+            self.reload()
 
     def clearColumn(self, i):
         logger.info("i: %s", i)
