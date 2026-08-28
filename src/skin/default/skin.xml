@@ -51,15 +51,16 @@
 			<convert type="TemplatedMultiContent">
 			{
 				"template": [
-					MultiContentEntryText(pos=(0, 0), size=(320, 150), font=1, flags=RT_VALIGN_CENTER, text="", border_width=1, border_color=0x595959),
-					MultiContentEntryText(pos=(5, 5), size=(55, 25), font=1, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER, text=0),
-					MultiContentEntryText(pos=(5, 32), size=(55, 20), font=2, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER, text=9),
-					MultiContentEntryText(pos=(65, 5), size=(245, 75), font=0, flags=RT_HALIGN_LEFT | RT_WRAP, text=1),
-					MultiContentEntryText(pos=(65, 90), size=(245, 25), font=1, flags=RT_HALIGN_LEFT | RT_WRAP, text=2, color=0xa0a0a0, color_sel=0xa0a0a0),
-					MultiContentEntryText(pos=(65, 118), size=(245, 25), font=1, flags=RT_HALIGN_LEFT | RT_WRAP, text=3, color=0xa0a0a0, color_sel=0xa0a0a0),
+					MultiContentEntryText(pos=(0,0), size=(320,150), font=1, flags=RT_VALIGN_CENTER, text="", border_width=1, border_color=0x595959),
+					MultiContentEntryText(pos=(5,5), size=(55,25), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=0),
+					MultiContentEntryText(pos=(5,32), size=(55,20), font=2, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=9),
+					MultiContentEntryText(pos=(65,5), size=(245,75), font=0, flags=RT_HALIGN_LEFT|RT_WRAP, text=1),
+					MultiContentEntryText(pos=(65,90), size=(245,25), font=1, flags=RT_HALIGN_LEFT|RT_WRAP, text=2, color=0xa0a0a0, color_sel=0xa0a0a0),
+					MultiContentEntryText(pos=(65,118), size=(245,25), font=1, flags=RT_HALIGN_LEFT|RT_WRAP, text=3, color=0xa0a0a0, color_sel=0xa0a0a0),
 				],
-				"fonts": [gFont("Regular", 23), gFont("Regular", 20), gFont("Regular", 17)],
-				"itemHeight": 150, "selectionEnabled": False
+				"fonts": [gFont("Regular",23), gFont("Regular",20), gFont("Regular",17)],
+				"itemHeight": 150,
+				"selectionEnabled": False
 			}
 			</convert>
 		</widget>
@@ -67,15 +68,16 @@
 			<convert type="TemplatedMultiContent">
 			{
 				"template": [
-					MultiContentEntryText(pos=(0, 0), size=(320, 150), font=1, flags=RT_VALIGN_CENTER, text="", border_width=1, border_color=0x595959),
-					MultiContentEntryText(pos=(5, 5), size=(55, 25), font=1, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER, text=0),
-					MultiContentEntryText(pos=(5, 32), size=(55, 20), font=2, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER, text=9),
-					MultiContentEntryText(pos=(65, 5), size=(245, 75), font=0, flags=RT_HALIGN_LEFT | RT_WRAP, text=1),
-					MultiContentEntryText(pos=(65, 90), size=(245, 25), font=1, flags=RT_HALIGN_LEFT | RT_WRAP, text=2, color=0xa0a0a0, color_sel=0xa0a0a0),
-					MultiContentEntryText(pos=(65, 118), size=(245, 25), font=1, flags=RT_HALIGN_LEFT | RT_WRAP, text=3, color=0xa0a0a0, color_sel=0xa0a0a0),
+					MultiContentEntryText(pos=(0,0), size=(320,150), font=1, flags=RT_VALIGN_CENTER, text="", border_width=1, border_color=0x595959),
+					MultiContentEntryText(pos=(5,5), size=(55,25), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=0),
+					MultiContentEntryText(pos=(5,32), size=(55,20), font=2, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=9),
+					MultiContentEntryText(pos=(65,5), size=(245,75), font=0, flags=RT_HALIGN_LEFT|RT_WRAP, text=1),
+					MultiContentEntryText(pos=(65,90), size=(245,25), font=1, flags=RT_HALIGN_LEFT|RT_WRAP, text=2, color=0xa0a0a0, color_sel=0xa0a0a0),
+					MultiContentEntryText(pos=(65,118), size=(245,25), font=1, flags=RT_HALIGN_LEFT|RT_WRAP, text=3, color=0xa0a0a0, color_sel=0xa0a0a0),
 				],
-				"fonts": [gFont("Regular", 23), gFont("Regular", 20), gFont("Regular", 17)],
-				"itemHeight": 150, "selectionEnabled": False
+				"fonts": [gFont("Regular",23), gFont("Regular",20), gFont("Regular",17)],
+				"itemHeight": 150,
+				"selectionEnabled": False
 			}
 			</convert>
 		</widget>
@@ -83,15 +85,16 @@
 			<convert type="TemplatedMultiContent">
 			{
 				"template": [
-					MultiContentEntryText(pos=(0, 0), size=(320, 150), font=1, flags=RT_VALIGN_CENTER, text="", border_width=1, border_color=0x595959),
-					MultiContentEntryText(pos=(5, 5), size=(55, 25), font=1, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER, text=0),
-					MultiContentEntryText(pos=(5, 32), size=(55, 20), font=2, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER, text=9),
-					MultiContentEntryText(pos=(65, 5), size=(245, 75), font=0, flags=RT_HALIGN_LEFT | RT_WRAP, text=1),
-					MultiContentEntryText(pos=(65, 90), size=(245, 25), font=1, flags=RT_HALIGN_LEFT | RT_WRAP, text=2, color=0xa0a0a0, color_sel=0xa0a0a0),
-					MultiContentEntryText(pos=(65, 118), size=(245, 25), font=1, flags=RT_HALIGN_LEFT | RT_WRAP, text=3, color=0xa0a0a0, color_sel=0xa0a0a0),
+					MultiContentEntryText(pos=(0,0), size=(320,150), font=1, flags=RT_VALIGN_CENTER, text="", border_width=1, border_color=0x595959),
+					MultiContentEntryText(pos=(5,5), size=(55,25), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=0),
+					MultiContentEntryText(pos=(5,32), size=(55,20), font=2, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=9),
+					MultiContentEntryText(pos=(65,5), size=(245,75), font=0, flags=RT_HALIGN_LEFT|RT_WRAP, text=1),
+					MultiContentEntryText(pos=(65,90), size=(245,25), font=1, flags=RT_HALIGN_LEFT|RT_WRAP, text=2, color=0xa0a0a0, color_sel=0xa0a0a0),
+					MultiContentEntryText(pos=(65,118), size=(245,25), font=1, flags=RT_HALIGN_LEFT|RT_WRAP, text=3, color=0xa0a0a0, color_sel=0xa0a0a0),
 				],
-				"fonts": [gFont("Regular", 23), gFont("Regular", 20), gFont("Regular", 17)],
-				"itemHeight": 150, "selectionEnabled": False
+				"fonts": [gFont("Regular",23), gFont("Regular",20), gFont("Regular",17)],
+				"itemHeight": 150,
+				"selectionEnabled": False
 			}
 			</convert>
 		</widget>
@@ -99,15 +102,16 @@
 			<convert type="TemplatedMultiContent">
 			{
 				"template": [
-					MultiContentEntryText(pos=(0, 0), size=(320, 150), font=1, flags=RT_VALIGN_CENTER, text="", border_width=1, border_color=0x595959),
-					MultiContentEntryText(pos=(5, 5), size=(55, 25), font=1, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER, text=0),
-					MultiContentEntryText(pos=(5, 32), size=(55, 20), font=2, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER, text=9),
-					MultiContentEntryText(pos=(65, 5), size=(245, 75), font=0, flags=RT_HALIGN_LEFT | RT_WRAP, text=1),
-					MultiContentEntryText(pos=(65, 90), size=(245, 25), font=1, flags=RT_HALIGN_LEFT | RT_WRAP, text=2, color=0xa0a0a0, color_sel=0xa0a0a0),
-					MultiContentEntryText(pos=(65, 118), size=(245, 25), font=1, flags=RT_HALIGN_LEFT | RT_WRAP, text=3, color=0xa0a0a0, color_sel=0xa0a0a0),
+					MultiContentEntryText(pos=(0,0), size=(320,150), font=1, flags=RT_VALIGN_CENTER, text="", border_width=1, border_color=0x595959),
+					MultiContentEntryText(pos=(5,5), size=(55,25), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=0),
+					MultiContentEntryText(pos=(5,32), size=(55,20), font=2, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=9),
+					MultiContentEntryText(pos=(65,5), size=(245,75), font=0, flags=RT_HALIGN_LEFT|RT_WRAP, text=1),
+					MultiContentEntryText(pos=(65,90), size=(245,25), font=1, flags=RT_HALIGN_LEFT|RT_WRAP, text=2, color=0xa0a0a0, color_sel=0xa0a0a0),
+					MultiContentEntryText(pos=(65,118), size=(245,25), font=1, flags=RT_HALIGN_LEFT|RT_WRAP, text=3, color=0xa0a0a0, color_sel=0xa0a0a0),
 				],
-				"fonts": [gFont("Regular", 23), gFont("Regular", 20), gFont("Regular", 17)],
-				"itemHeight": 150, "selectionEnabled": False
+				"fonts": [gFont("Regular",23), gFont("Regular",20), gFont("Regular",17)],
+				"itemHeight": 150,
+				"selectionEnabled": False
 			}
 			</convert>
 		</widget>
@@ -115,15 +119,16 @@
 			<convert type="TemplatedMultiContent">
 			{
 				"template": [
-					MultiContentEntryText(pos=(0, 0), size=(320, 150), font=1, flags=RT_VALIGN_CENTER, text="", border_width=1, border_color=0x595959),
-					MultiContentEntryText(pos=(5, 5), size=(55, 25), font=1, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER, text=0),
-					MultiContentEntryText(pos=(5, 32), size=(55, 20), font=2, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER, text=9),
-					MultiContentEntryText(pos=(65, 5), size=(245, 75), font=0, flags=RT_HALIGN_LEFT | RT_WRAP, text=1),
-					MultiContentEntryText(pos=(65, 90), size=(245, 25), font=1, flags=RT_HALIGN_LEFT | RT_WRAP, text=2, color=0xa0a0a0, color_sel=0xa0a0a0),
-					MultiContentEntryText(pos=(65, 118), size=(245, 25), font=1, flags=RT_HALIGN_LEFT | RT_WRAP, text=3, color=0xa0a0a0, color_sel=0xa0a0a0),
+					MultiContentEntryText(pos=(0,0), size=(320,150), font=1, flags=RT_VALIGN_CENTER, text="", border_width=1, border_color=0x595959),
+					MultiContentEntryText(pos=(5,5), size=(55,25), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=0),
+					MultiContentEntryText(pos=(5,32), size=(55,20), font=2, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=9),
+					MultiContentEntryText(pos=(65,5), size=(245,75), font=0, flags=RT_HALIGN_LEFT|RT_WRAP, text=1),
+					MultiContentEntryText(pos=(65,90), size=(245,25), font=1, flags=RT_HALIGN_LEFT|RT_WRAP, text=2, color=0xa0a0a0, color_sel=0xa0a0a0),
+					MultiContentEntryText(pos=(65,118), size=(245,25), font=1, flags=RT_HALIGN_LEFT|RT_WRAP, text=3, color=0xa0a0a0, color_sel=0xa0a0a0),
 				],
-				"fonts": [gFont("Regular", 23), gFont("Regular", 20), gFont("Regular", 17)],
-				"itemHeight": 150, "selectionEnabled": False
+				"fonts": [gFont("Regular",23), gFont("Regular",20), gFont("Regular",17)],
+				"itemHeight": 150,
+				"selectionEnabled": False
 			}
 			</convert>
 		</widget>
@@ -131,15 +136,16 @@
 			<convert type="TemplatedMultiContent">
 			{
 				"template": [
-					MultiContentEntryText(pos=(0, 0), size=(320, 150), font=1, flags=RT_VALIGN_CENTER, text="", border_width=1, border_color=0x595959),
-					MultiContentEntryText(pos=(5, 5), size=(55, 25), font=1, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER, text=0),
-					MultiContentEntryText(pos=(5, 32), size=(55, 20), font=2, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER, text=9),
-					MultiContentEntryText(pos=(65, 5), size=(245, 75), font=0, flags=RT_HALIGN_LEFT | RT_WRAP, text=1),
-					MultiContentEntryText(pos=(65, 90), size=(245, 25), font=1, flags=RT_HALIGN_LEFT | RT_WRAP, text=2, color=0xa0a0a0, color_sel=0xa0a0a0),
-					MultiContentEntryText(pos=(65, 118), size=(245, 25), font=1, flags=RT_HALIGN_LEFT | RT_WRAP, text=3, color=0xa0a0a0, color_sel=0xa0a0a0),
+					MultiContentEntryText(pos=(0,0), size=(320,150), font=1, flags=RT_VALIGN_CENTER, text="", border_width=1, border_color=0x595959),
+					MultiContentEntryText(pos=(5,5), size=(55,25), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=0),
+					MultiContentEntryText(pos=(5,32), size=(55,20), font=2, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=9),
+					MultiContentEntryText(pos=(65,5), size=(245,75), font=0, flags=RT_HALIGN_LEFT|RT_WRAP, text=1),
+					MultiContentEntryText(pos=(65,90), size=(245,25), font=1, flags=RT_HALIGN_LEFT|RT_WRAP, text=2, color=0xa0a0a0, color_sel=0xa0a0a0),
+					MultiContentEntryText(pos=(65,118), size=(245,25), font=1, flags=RT_HALIGN_LEFT|RT_WRAP, text=3, color=0xa0a0a0, color_sel=0xa0a0a0),
 				],
-				"fonts": [gFont("Regular", 23), gFont("Regular", 20), gFont("Regular", 17)],
-				"itemHeight": 150, "selectionEnabled": False
+				"fonts": [gFont("Regular",23), gFont("Regular",20), gFont("Regular",17)],
+				"itemHeight": 150,
+				"selectionEnabled": False
 			}
 			</convert>
 		</widget>
