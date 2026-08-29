@@ -1,0 +1,33 @@
+- widget:
+    alphatest: "on"
+    name: "picon$index"
+    position: "5,66"
+    scaleFlags: "scaleCenter"
+    size: "80,48"
+- widget:
+    alphatest: "on"
+    name: "programpix$index"
+    position: "115,66"
+    scaleFlags: "scaleCenter"
+    size: "200,133"
+- widget:
+    font: "$FR_verysmall"
+    foregroundColor: "yellow"
+    name: "channel$index"
+    position: "5,123"
+    size: "110,46"
+    transparent: "1"
+- widget:
+    font: "$FR_verysmall"
+    foregroundColor: "yellow"
+    name: "time$index"
+    position: "5,176"
+    size: "95,28"
+    transparent: "1"
+- widget:
+    font: "$FR_verysmall"
+    foregroundColor: "yellow"
+    name: "description$index"
+    position: "5,211"
+    size: "310,50"
+    transparent: "1"
