@@ -1,7 +1,7 @@
 screen:
   backgroundColor: "panelBG"
   flags: "wfNoBorder"
-  name: "ProgramColumns"
+  name: "TVMagazineCockpit"
   position: "center,center"
   resolution: "1920,1080"
   size: "1920,1080"

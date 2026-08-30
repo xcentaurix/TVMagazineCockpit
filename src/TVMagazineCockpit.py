@@ -36,7 +36,7 @@ class TVMagazineCockpit(Screen, More, Picture):
     def __init__(self, session):
         logger.info("...")
         Screen.__init__(self, session)
-        self.skinName = "ProgramColumns"
+        self.skinName = "TVMagazineCockpit"
         More.__init__(self, session)
         self.channel_dict = readChannelDict()
         self.channel_list = readChannelList(self.channel_dict)
@@ -289,3 +289,9 @@ class TVMagazineCockpit(Screen, More, Picture):
 
     def __onClose__(self):
         logger.info("...")
+        # Async detail fetches (Column.resolveEventDetails) can still be
+        # in flight when the screen is closed - their callbacks arrive
+        # later via reactor.callFromThread and would otherwise run against
+        # a torn-down screen. Tell the column handler to stop waiting for
+        # them.
+        self.column_handler.cancelPendingRefresh()

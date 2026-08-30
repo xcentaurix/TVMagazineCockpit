@@ -5,6 +5,8 @@ skin:
     - xmlinc:
         file: "screenpart_fonts.noymlinc"
     - xmlinc:
-        file: "screen_ProgramColumns"
+        file: "screenpart_ScrollBarStyle.ymlinc"
     - xmlinc:
-        file: "screen_EventDetails"
+        file: "screen_TVMagazineCockpit.ymlinc"
+    - xmlinc:
+        file: "screen_EventDetails.ymlinc"

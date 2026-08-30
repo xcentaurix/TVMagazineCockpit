@@ -98,6 +98,8 @@ class Column:
 
     def onEventDetailsResolved(self, event_list, j, url, detailed_event, service_ref):
         """Runs on the GUI thread once an async detail fetch completes."""
+        if self.parent is None:
+            return  # screen was closed before this fetch resolved
         self.parent.pending_detail_fetches.discard(url)
         if j >= len(event_list) or event_list[j][idx['urlsendung']] != url:
             return
@@ -124,9 +126,20 @@ class Column:
             if not self.refresh_timer.isActive():
                 self.refresh_timer.start(150, True)
 
+    def cancelPendingRefresh(self):
+        """Stop waiting on in-flight async detail fetches and drop the
+        parent reference. Called from TVMagazineCockpit.__onClose__ so
+        fetches that resolve after the screen closes become no-ops in
+        onEventDetailsResolved instead of touching a torn-down screen."""
+        self.refresh_timer.stop()
+        self.pending_refresh_columns.clear()
+        self.parent = None
+
     def flushPendingRefresh(self):
         """Applies all columns' setList() updates coalesced since the last
         flush, instead of one setList() call per resolved event."""
+        if self.parent is None:
+            return
         for i in self.pending_refresh_columns:
             if i >= len(self.parent.page_channel_list):
                 continue

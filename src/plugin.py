@@ -43,7 +43,8 @@ def Plugins(**__kwargs):
                 PluginDescriptor.WHERE_AUTOSTART,
                 PluginDescriptor.WHERE_SESSIONSTART
             ],
-            fnc=autoStart
+            fnc=autoStart,
+            needsRestart=True
         ),
         PluginDescriptor(
             name="TVMagazineCockpit",
@@ -53,6 +54,7 @@ def Plugins(**__kwargs):
             ],
             icon="TVMagazineCockpit.png",
             description=_("Browse TV Magazine"),
-            fnc=main
+            fnc=main,
+            needsRestart=True
         ),
     ]
