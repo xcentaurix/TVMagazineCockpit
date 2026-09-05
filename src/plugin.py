@@ -3,6 +3,7 @@
 
 
 from Plugins.Plugin import PluginDescriptor
+from skin import findSkinScreen
 from . import ConfigInit  # noqa: F401, pylint: disable=unused-import
 from .Debug import logger
 from .Version import VERSION
@@ -12,7 +13,8 @@ from .Cache import Cache
 from .SkinUtils import loadPluginSkin
 
 
-loadPluginSkin()
+if findSkinScreen("TVMagazineCockpit") is None:
+    loadPluginSkin()
 
 
 cache_instance = None
@@ -56,5 +58,9 @@ def Plugins(**__kwargs):
             description=_("Browse TV Magazine"),
             fnc=main,
             needsRestart=True
+        ),
+        PluginDescriptor(
+            where=PluginDescriptor.WHERE_SKINCHANGE,
+            fnc=loadPluginSkin
         ),
     ]

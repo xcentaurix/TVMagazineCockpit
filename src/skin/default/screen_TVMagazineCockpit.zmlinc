@@ -1,0 +1,42 @@
+screen:
+  name: "TVMagazineCockpit"
+  position: "center,center"
+  size: "1920,1080"
+  children:
+    - xmlinc:
+        file: "screenpart_TitleBar.ymlinc"
+    - widget:
+        font: "$FR_verysmall"
+        halign: "right"
+        name: "day_selector"
+        position: "1490,15"
+        size: "420,26"
+        transparent: "1"
+        valign: "center"
+        zPosition: "2"
+    - for:
+        var: "$i"
+        range: [0, 5]
+        body:
+          - xmlinc:
+              file: "screenpart_PrimeCell.ymlinc"
+              index: "$i"
+              position: "$i*$screen_width/6,0"
+    - for:
+        var: "$i"
+        range: [0, 5]
+        body:
+          - widget:
+              backgroundColorSelected: "keyBlue"
+              enableWrapAround: "1"
+              position: "eval($i*320),275"
+              render: "Listbox"
+              scrollbarMode: "showNever"
+              size: "320,750"
+              source: "list$i"
+              transparent: "1"
+              children:
+                - xmlinc:
+                    file: "screenpart_EventCell.ymlinc"
+    - xmlinc:
+        file: "screenpart_Footer.ymlinc"

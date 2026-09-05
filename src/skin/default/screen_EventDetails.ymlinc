@@ -1,9 +1,6 @@
 screen:
-  backgroundColor: "panelBG"
-  flags: "wfNoBorder"
   name: "EventDetails"
   position: "center,center"
-  resolution: "1920,1080"
   size: "1800,930"
   children:
     - xmlinc:
@@ -51,7 +48,4 @@ screen:
         scaleFlags: "scaleCenter"
         size: "500,375"
     - xmlinc:
-        file: "screenpart_BottomBar.ymlinc"
-    - xmlinc:
-        file: "screenpart_ButtonBar.ymlinc"
-        position: "0,$screen_height-48"
+        file: "screenpart_Footer.ymlinc"

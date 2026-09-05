@@ -150,8 +150,8 @@
 			}
 			</convert>
 		</widget>
-		<eLabel backgroundColor="separator" position="0,e-56" size="e,2"/>
-		<eLabel backgroundColor="barBG" position="0,e-55" size="e,55"/>
+		<eLabel backgroundColor="separator" position="0,1024" size="1920,2"/>
+		<eLabel backgroundColor="barBG" position="0,1025" size="1920,55"/>
 		<widget conditional="key_red" font="Regular;32" foregroundColor="keyRed" halign="center" name="key_red" position="0,1032" size="435,38" transparent="1" valign="center" zPosition="2"/>
 		<widget conditional="key_green" font="Regular;32" foregroundColor="keyGreen" halign="center" name="key_green" position="435,1032" size="435,38" transparent="1" valign="center" zPosition="2"/>
 		<widget conditional="key_yellow" font="Regular;32" foregroundColor="keyYellow" halign="center" name="key_yellow" position="870,1032" size="435,38" transparent="1" valign="center" zPosition="2"/>
@@ -169,8 +169,8 @@
 		<widget font="Regular;32" name="duration" position="150,170" size="300,37" transparent="1" valign="center" zPosition="1"/>
 		<widget font="Regular;32" name="description" position="20,230" size="1230,560" transparent="1"/>
 		<widget name="programpix" position="1270,70" scaleFlags="scaleCenter" size="500,375"/>
-		<eLabel backgroundColor="separator" position="0,e-56" size="e,2"/>
-		<eLabel backgroundColor="barBG" position="0,e-55" size="e,55"/>
+		<eLabel backgroundColor="separator" position="0,874" size="1800,2"/>
+		<eLabel backgroundColor="barBG" position="0,875" size="1800,55"/>
 		<widget conditional="key_red" font="Regular;32" foregroundColor="keyRed" halign="center" name="key_red" position="0,882" size="405,38" transparent="1" valign="center" zPosition="2"/>
 		<widget conditional="key_green" font="Regular;32" foregroundColor="keyGreen" halign="center" name="key_green" position="405,882" size="405,38" transparent="1" valign="center" zPosition="2"/>
 		<widget conditional="key_yellow" font="Regular;32" foregroundColor="keyYellow" halign="center" name="key_yellow" position="810,882" size="405,38" transparent="1" valign="center" zPosition="2"/>
